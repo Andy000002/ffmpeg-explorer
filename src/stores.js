@@ -7,9 +7,10 @@ export const auto = writable(true);
 export const doFit = writable(0);
 export const selectedFilter = writable();
 
+const BASE = import.meta.env.BASE_URL;
 export const INPUTNAMES = [
-  { name: "punch.mp4", url: "/punch.mp4", ext: "mp4", outputs: ["v", "a"], inputs: [] },
-  { name: "shoe.mp4", url: "/shoe.mp4", ext: "mp4", outputs: ["v", "a"], inputs: [] },
+  { name: "punch.mp4", url: BASE + "punch.mp4", ext: "mp4", outputs: ["v", "a"], inputs: [] },
+  { name: "shoe.mp4", url: BASE + "shoe.mp4", ext: "mp4", outputs: ["v", "a"], inputs: [] },
 ];
 
 export const OUTPUTNAMES = [

@@ -22,15 +22,16 @@
   const baseURL = `https://unpkg.com/@ffmpeg/core${!isChrome ? "-mt" : ""}@0.12.2/dist/esm`;
   const TIMEOUT = 40000;
   const ffmpeg = new FFmpeg();
+  const BASE = import.meta.env.BASE_URL;
   const examples = [
-    { name: "Cross Fade", url: "/examples/xfade.json" },
-    { name: "Crop & Trim", url: "/examples/crop_trim.json" },
-    { name: "Scale & Overlay", url: "/examples/scale_overlay.json" },
-    { name: "Text", url: "/examples/text.json" },
-    { name: "Speed Up", url: "/examples/speedup.json" },
-    { name: "Slow Down Smoothly", url: "/examples/smooth_slow.json" },
-    { name: "Video Grid", url: "/examples/grid.json" },
-    { name: "Mirror", url: "/examples/mirror.json" },
+    { name: "淡入淡出", url: BASE + "examples/xfade.json" },
+    { name: "裁切與剪輯", url: BASE + "examples/crop_trim.json" },
+    { name: "縮放與疊加", url: BASE + "examples/scale_overlay.json" },
+    { name: "文字字幕", url: BASE + "examples/text.json" },
+    { name: "加速播放", url: BASE + "examples/speedup.json" },
+    { name: "慢動作", url: BASE + "examples/smooth_slow.json" },
+    { name: "影像格線", url: BASE + "examples/grid.json" },
+    { name: "鏡像效果", url: BASE + "examples/mirror.json" },
   ];
 
   let videoValue = "/" + $inputs[0].name;
@@ -53,6 +54,13 @@
     $auto = false;
     const response = await fetch(url);
     const example = await response.json();
+    const base = import.meta.env.BASE_URL;
+    example.nodes = example.nodes.map((n) => {
+      if (n.data?.url?.startsWith("/") && !n.data.url.startsWith(base)) {
+        n.data.url = base + n.data.url.slice(1);
+      }
+      return n;
+    });
     $nodes = example.nodes;
     $edges = example.edges;
     $doFit++;
@@ -185,38 +193,30 @@
 
 <main>
   <section class="header">
-    <h1>FFmpeg Explorer</h1>
+    <h1>FFmpeg 探索器</h1>
     <div class="help">
       <p>
-        A tool to help you explore <a
-          href="https://www.ffmpeg.org/"
-          target="_blank">FFmpeg</a
-        >
-        filters. To use:
+        視覺化探索 <a href="https://www.ffmpeg.org/" target="_blank">FFmpeg</a> filters 的工具，使用方法：
       </p>
       <ol>
-        <li>Add filters from the list on the left.</li>
-        <li>Click on filters in the node editor to modify options.</li>
-        <li>Hit "render" to preview the output in browser.</li>
-        <li>To edit the graph, disable "lock layout."</li>
+        <li>從左側清單點選 filter 加入。</li>
+        <li>點擊節點編輯器中的 filter 調整參數。</li>
+        <li>按「渲染預覽」在瀏覽器預覽輸出。</li>
+        <li>取消「鎖定佈局」可以編輯節點圖。</li>
       </ol>
       <p>
-        Note: work in progress, many things may be broken! Refresh if it hangs
-        or crashes. May not work on mobile. Post issues/feedback to
-        <a
-          href="https://github.com/antiboredom/ffmpeg-explorer/"
-          target="_blank">GitHub</a
-        >. By
-        <a href="https://lav.io" target="_blank">Sam Lavigne</a>.
+        問題回報請到
+        <a href="https://github.com/antiboredom/ffmpeg-explorer/" target="_blank">GitHub</a>。
+        原作者 <a href="https://lav.io" target="_blank">Sam Lavigne</a>。
       </p>
     </div>
   </section>
   <!-- {message} -->
   <section class="command">
     <div class="section-head">
-      <h3>Output Command</h3>
+      <h3>輸出指令</h3>
       <div>
-        <button on:click={copyCommand}>Copy Command</button>
+        <button on:click={copyCommand}>複製指令</button>
       </div>
     </div>
 
@@ -234,12 +234,12 @@
 
   <section class="log">
     <div class="section-head">
-      <h3>Error Log</h3>
+      <h3>錯誤記錄</h3>
       <div>
         <button
           on:click={() => {
             log = "";
-          }}>Clear Errors</button
+          }}>清除</button
         >
       </div>
     </div>
@@ -252,8 +252,8 @@
     <div class="vid-holder">
       {#if rendering}
         <div class="rendering-video">
-          <p>Rendering...{(renderProgress * 100).toFixed(2)}%</p>
-          <button on:click={stopRender}>Cancel</button>
+          <p>渲染中...{(renderProgress * 100).toFixed(2)}%</p>
+          <button on:click={stopRender}>取消</button>
         </div>
       {/if}
       {#if $outputs[0].name.endsWith("gif") && videoValue && !videoValue.endsWith("mp4")}
@@ -266,19 +266,19 @@
       <button on:click={render} disabled={!ffmpegLoaded || rendering}>
         {#if ffmpegLoaded}
           {#if rendering}
-            Rendering...
+            渲染中...
           {:else}
-            Render Preview
+            渲染預覽
           {/if}
         {:else}
-          Loading ffmpeg
+          載入 FFmpeg 中
         {/if}
       </button>
     </div>
   </section>
 
   <section class="filters">
-    <h3>Filters (click to add)</h3>
+    <h3>Filters（點擊加入）</h3>
     <div class="filter-picker">
       <FilterPicker select={"video"} />
     </div>
@@ -288,8 +288,8 @@
     <div class="graph-holder">
       <div class="graph-nav">
         <div>
-          <button on:click={addInput}>Add Sample Input</button>
-          <button on:click={() => fileinput.click()}>Upload File</button>
+          <button on:click={addInput}>加入範例素材</button>
+          <button on:click={() => fileinput.click()}>上傳影片</button>
           <input
             type="file"
             accept="video/*"
@@ -298,12 +298,12 @@
             style="display: none;"
           />
           <label for="auto"
-            ><input id="auto" type="checkbox" bind:checked={$auto} />Lock Layout</label
+            ><input id="auto" type="checkbox" bind:checked={$auto} />鎖定佈局</label
           >
         </div>
 
         <div class="examples">
-          <label>Examples</label>
+          <label>範例</label>
           <select on:change={(e) => loadExample(e.target.value)}>
             <option value="" />
             {#each examples as example}

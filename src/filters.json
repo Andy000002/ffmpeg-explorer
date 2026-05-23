@@ -4,7 +4,7 @@
     "meta": "...",
     "name": "abench",
     "type": "A->A",
-    "description": "Benchmark part of a filtergraph.",
+    "description": "對濾鏡圖進行基準測試。",
     "inputs": [
       "a"
     ],
@@ -37,7 +37,7 @@
     "meta": "..C",
     "name": "acompressor",
     "type": "A->A",
-    "description": "Audio compressor.",
+    "description": "音訊壓縮器。",
     "inputs": [
       "a"
     ],
@@ -178,7 +178,7 @@
     "meta": "...",
     "name": "acontrast",
     "type": "A->A",
-    "description": "Simple audio dynamic range compression/expansion filter.",
+    "description": "簡易音訊動態範圍壓縮／擴展濾鏡。",
     "inputs": [
       "a"
     ],
@@ -201,7 +201,7 @@
     "meta": "...",
     "name": "acopy",
     "type": "A->A",
-    "description": "Copy the input audio unchanged to the output.",
+    "description": "將輸入音訊原樣傳至輸出。",
     "inputs": [
       "a"
     ],
@@ -214,7 +214,7 @@
     "meta": "...",
     "name": "acue",
     "type": "A->A",
-    "description": "Delay filtering to match a cue.",
+    "description": "延遲濾波以匹配提示點。",
     "inputs": [
       "a"
     ],
@@ -253,7 +253,7 @@
     "meta": "...",
     "name": "acrossfade",
     "type": "AA->A",
-    "description": "Cross fade two input audio streams.",
+    "description": "對兩路輸入音訊串流進行交叉淡化。",
     "inputs": [
       "a",
       "a"
@@ -677,7 +677,7 @@
     "meta": ".S.",
     "name": "acrossover",
     "type": "A->N",
-    "description": "Split audio into per-bands streams.",
+    "description": "將音訊分割為各頻段串流。",
     "inputs": [
       "a"
     ],
@@ -788,7 +788,7 @@
     "meta": "T.C",
     "name": "acrusher",
     "type": "A->A",
-    "description": "Reduce audio bit resolution.",
+    "description": "降低音訊位元解析度。",
     "inputs": [
       "a"
     ],
@@ -901,7 +901,7 @@
     "meta": "TS.",
     "name": "adeclick",
     "type": "A->A",
-    "description": "Remove impulsive noise from input audio.",
+    "description": "移除輸入音訊中的脈衝雜訊。",
     "inputs": [
       "a"
     ],
@@ -1048,7 +1048,7 @@
     "meta": "TS.",
     "name": "adeclip",
     "type": "A->A",
-    "description": "Remove clipping from input audio.",
+    "description": "修復輸入音訊中的削波失真。",
     "inputs": [
       "a"
     ],
@@ -1195,7 +1195,7 @@
     "meta": "TS.",
     "name": "adecorrelate",
     "type": "A->A",
-    "description": "Apply decorrelation to input audio.",
+    "description": "對輸入音訊套用去相關處理。",
     "inputs": [
       "a"
     ],
@@ -1226,7 +1226,7 @@
     "meta": "T.C",
     "name": "adelay",
     "type": "A->A",
-    "description": "Delay one or more audio channels.",
+    "description": "延遲一個或多個音訊聲道。",
     "inputs": [
       "a"
     ],
@@ -1257,7 +1257,7 @@
     "meta": "TSC",
     "name": "adenorm",
     "type": "A->A",
-    "description": "Remedy denormals by adding extremely low-level noise.",
+    "description": "透過加入極低電平雜訊修正非正規數。",
     "inputs": [
       "a"
     ],
@@ -1306,7 +1306,7 @@
     "meta": "T..",
     "name": "aderivative",
     "type": "A->A",
-    "description": "Compute derivative of input audio.",
+    "description": "計算輸入音訊的導數。",
     "inputs": [
       "a"
     ],
@@ -1320,7 +1320,7 @@
     "meta": "TSC",
     "name": "adynamicequalizer",
     "type": "A->A",
-    "description": "Apply Dynamic Equalization of input audio.",
+    "description": "對輸入音訊套用動態等化。",
     "inputs": [
       "a"
     ],
@@ -1499,7 +1499,7 @@
     "meta": "T.C",
     "name": "adynamicsmooth",
     "type": "A->A",
-    "description": "Apply Dynamic Smoothing of input audio.",
+    "description": "對輸入音訊套用動態平滑。",
     "inputs": [
       "a"
     ],
@@ -1530,7 +1530,7 @@
     "meta": "...",
     "name": "aecho",
     "type": "A->A",
-    "description": "Add echoing to the audio.",
+    "description": "為音訊加入迴聲效果。",
     "inputs": [
       "a"
     ],
@@ -1577,7 +1577,7 @@
     "meta": "TSC",
     "name": "aemphasis",
     "type": "A->A",
-    "description": "Audio emphasis.",
+    "description": "音訊強調濾波。",
     "inputs": [
       "a"
     ],
@@ -1649,19 +1649,19 @@
           },
           {
             "value": "50fm",
-            "desc": "50\u00b5s (FM)"
+            "desc": "50µs (FM)"
           },
           {
             "value": "75fm",
-            "desc": "75\u00b5s (FM)"
+            "desc": "75µs (FM)"
           },
           {
             "value": "50kf",
-            "desc": "50\u00b5s (FM-KF)"
+            "desc": "50µs (FM-KF)"
           },
           {
             "value": "75kf",
-            "desc": "75\u00b5s (FM-KF)"
+            "desc": "75µs (FM-KF)"
           }
         ]
       }
@@ -1672,7 +1672,7 @@
     "meta": "T..",
     "name": "aeval",
     "type": "A->A",
-    "description": "Filter audio signal according to a specified expression.",
+    "description": "依指定表達式對音訊訊號進行濾波。",
     "inputs": [
       "a"
     ],
@@ -1711,7 +1711,7 @@
     "meta": "T.C",
     "name": "aexciter",
     "type": "A->A",
-    "description": "Enhance high frequency part of audio.",
+    "description": "增強音訊的高頻部分。",
     "inputs": [
       "a"
     ],
@@ -1790,7 +1790,7 @@
     "meta": "T.C",
     "name": "afade",
     "type": "A->A",
-    "description": "Fade in/out input audio.",
+    "description": "對輸入音訊進行淡入／淡出。",
     "inputs": [
       "a"
     ],
@@ -2101,7 +2101,7 @@
     "meta": "TSC",
     "name": "afftdn",
     "type": "A->A",
-    "description": "Denoise audio samples using FFT.",
+    "description": "使用 FFT 對音訊樣本降噪。",
     "inputs": [
       "a"
     ],
@@ -2540,7 +2540,7 @@
     "meta": "TS.",
     "name": "afftfilt",
     "type": "A->A",
-    "description": "Apply arbitrary expressions to samples in frequency domain.",
+    "description": "在頻域對樣本套用任意表達式。",
     "inputs": [
       "a"
     ],
@@ -2685,7 +2685,7 @@
     "meta": ".SC",
     "name": "afir",
     "type": "N->N",
-    "description": "Apply Finite Impulse Response filter with supplied coefficients in additional stream(s).",
+    "description": "使用額外串流中提供的係數套用有限脈衝響應 (FIR) 濾鏡。",
     "inputs": [
       "n"
     ],
@@ -2878,7 +2878,7 @@
     "meta": "...",
     "name": "aformat",
     "type": "A->A",
-    "description": "Convert the input audio to one of the specified formats.",
+    "description": "將輸入音訊轉換為指定格式之一。",
     "inputs": [
       "a"
     ],
@@ -2941,7 +2941,7 @@
     "meta": "TSC",
     "name": "afreqshift",
     "type": "A->A",
-    "description": "Apply frequency shifting to input audio.",
+    "description": "對輸入音訊套用頻率偏移。",
     "inputs": [
       "a"
     ],
@@ -2980,7 +2980,7 @@
     "meta": "TSC",
     "name": "afwtdn",
     "type": "A->A",
-    "description": "Denoise audio stream using Wavelets.",
+    "description": "使用小波對音訊串流降噪。",
     "inputs": [
       "a"
     ],
@@ -3089,7 +3089,7 @@
     "meta": "T.C",
     "name": "agate",
     "type": "A->A",
-    "description": "Audio gate.",
+    "description": "音訊閘。",
     "inputs": [
       "a"
     ],
@@ -3230,7 +3230,7 @@
     "meta": ".S.",
     "name": "aiir",
     "type": "A->N",
-    "description": "Apply Infinite Impulse Response filter with supplied coefficients.",
+    "description": "使用提供的係數套用無限脈衝響應濾鏡。",
     "inputs": [
       "a"
     ],
@@ -3537,7 +3537,7 @@
     "meta": "T..",
     "name": "aintegral",
     "type": "A->A",
-    "description": "Compute integral of input audio.",
+    "description": "計算輸入音訊的積分。",
     "inputs": [
       "a"
     ],
@@ -3551,7 +3551,7 @@
     "meta": "...",
     "name": "ainterleave",
     "type": "N->A",
-    "description": "Temporally interleave audio inputs.",
+    "description": "對音訊輸入進行時間交錯。",
     "inputs": [
       "n"
     ],
@@ -3604,7 +3604,7 @@
     "meta": "T..",
     "name": "alatency",
     "type": "A->A",
-    "description": "Report audio filtering latency.",
+    "description": "報告音訊濾波延遲。",
     "inputs": [
       "a"
     ],
@@ -3617,7 +3617,7 @@
     "meta": "T.C",
     "name": "alimiter",
     "type": "A->A",
-    "description": "Audio lookahead limiter.",
+    "description": "音訊預見限幅器。",
     "inputs": [
       "a"
     ],
@@ -3704,7 +3704,7 @@
     "meta": "TSC",
     "name": "allpass",
     "type": "A->A",
-    "description": "Apply a two-pole all-pass filter.",
+    "description": "套用雙極全通濾鏡。",
     "inputs": [
       "a"
     ],
@@ -4011,7 +4011,7 @@
     "meta": "...",
     "name": "aloop",
     "type": "A->A",
-    "description": "Loop audio samples.",
+    "description": "循環音訊樣本。",
     "inputs": [
       "a"
     ],
@@ -4050,7 +4050,7 @@
     "meta": "...",
     "name": "amerge",
     "type": "N->A",
-    "description": "Merge two or more audio streams into a single multi-channel stream.",
+    "description": "將兩路或多路音訊串流合併為單一多聲道串流。",
     "inputs": [
       "a",
       "a"
@@ -4074,7 +4074,7 @@
     "meta": "T..",
     "name": "ametadata",
     "type": "A->A",
-    "description": "Manipulate audio frame metadata.",
+    "description": "操作音訊影格元數據。",
     "inputs": [
       "a"
     ],
@@ -4197,7 +4197,7 @@
     "meta": "..C",
     "name": "amix",
     "type": "N->A",
-    "description": "Audio mixing.",
+    "description": "音訊混音。",
     "inputs": [
       "a",
       "a"
@@ -4267,7 +4267,7 @@
     "meta": "...",
     "name": "amultiply",
     "type": "AA->A",
-    "description": "Multiply two audio streams.",
+    "description": "將兩路音訊串流相乘。",
     "inputs": [
       "a",
       "a"
@@ -4281,7 +4281,7 @@
     "meta": "TSC",
     "name": "anequalizer",
     "type": "A->N",
-    "description": "Apply high-order audio parametric multi band equalizer.",
+    "description": "套用高階音訊參數式多頻段等化器。",
     "inputs": [
       "a"
     ],
@@ -4354,7 +4354,7 @@
     "meta": "TSC",
     "name": "anlmdn",
     "type": "A->A",
-    "description": "Reduce broadband noise from stream using Non-Local Means.",
+    "description": "使用非局部均值對串流進行寬頻降噪。",
     "inputs": [
       "a"
     ],
@@ -4477,7 +4477,7 @@
     "meta": "TSC",
     "name": "anlmf",
     "type": "AA->A",
-    "description": "Apply Normalized Least-Mean-Fourth algorithm to first audio stream.",
+    "description": "對第一路音訊串流套用正規化最小均四次方演算法。",
     "inputs": [
       "a",
       "a"
@@ -4551,7 +4551,7 @@
     "meta": "TSC",
     "name": "anlms",
     "type": "AA->A",
-    "description": "Apply Normalized Least-Mean-Squares algorithm to first audio stream.",
+    "description": "對第一路音訊串流套用正規化最小均方演算法。",
     "inputs": [
       "a",
       "a"
@@ -4625,7 +4625,7 @@
     "meta": "...",
     "name": "anull",
     "type": "A->A",
-    "description": "Pass the source unchanged to the output.",
+    "description": "將來源原樣傳至輸出。",
     "inputs": [
       "a"
     ],
@@ -4638,7 +4638,7 @@
     "meta": "T..",
     "name": "apad",
     "type": "A->A",
-    "description": "Pad audio with silence.",
+    "description": "以靜音填充音訊。",
     "inputs": [
       "a"
     ],
@@ -4693,7 +4693,7 @@
     "meta": "T.C",
     "name": "aperms",
     "type": "A->A",
-    "description": "Set permissions for the output audio frame.",
+    "description": "設定輸出音訊影格的權限。",
     "inputs": [
       "a"
     ],
@@ -4746,7 +4746,7 @@
     "meta": "...",
     "name": "aphaser",
     "type": "A->A",
-    "description": "Add a phasing effect to the audio.",
+    "description": "為音訊加入移相效果。",
     "inputs": [
       "a"
     ],
@@ -4827,7 +4827,7 @@
     "meta": "TSC",
     "name": "aphaseshift",
     "type": "A->A",
-    "description": "Apply phase shifting to input audio.",
+    "description": "對輸入音訊套用相位偏移。",
     "inputs": [
       "a"
     ],
@@ -4866,7 +4866,7 @@
     "meta": "TSC",
     "name": "apsyclip",
     "type": "A->A",
-    "description": "Audio Psychoacoustic Clipper.",
+    "description": "音訊心理聲學削波器。",
     "inputs": [
       "a"
     ],
@@ -4937,7 +4937,7 @@
     "meta": "...",
     "name": "apulsator",
     "type": "A->A",
-    "description": "Audio pulsator.",
+    "description": "音訊脈動器。",
     "inputs": [
       "a"
     ],
@@ -5076,7 +5076,7 @@
     "meta": "..C",
     "name": "arealtime",
     "type": "A->A",
-    "description": "Slow down filtering to match realtime.",
+    "description": "降低濾波速度以符合即時播放。",
     "inputs": [
       "a"
     ],
@@ -5107,7 +5107,7 @@
     "meta": "...",
     "name": "aresample",
     "type": "A->A",
-    "description": "Resample audio data.",
+    "description": "對音訊數據重新取樣。",
     "inputs": [
       "a"
     ],
@@ -5130,7 +5130,7 @@
     "meta": "...",
     "name": "areverse",
     "type": "A->A",
-    "description": "Reverse an audio clip.",
+    "description": "將音訊片段倒轉播放。",
     "inputs": [
       "a"
     ],
@@ -5143,7 +5143,7 @@
     "meta": "TSC",
     "name": "arnndn",
     "type": "A->A",
-    "description": "Reduce noise from speech using Recurrent Neural Networks.",
+    "description": "使用循環神經網路對語音降噪。",
     "inputs": [
       "a"
     ],
@@ -5182,7 +5182,7 @@
     "meta": "...",
     "name": "asdr",
     "type": "AA->A",
-    "description": "Measure Audio Signal-to-Distortion Ratio.",
+    "description": "測量音訊訊噪比。",
     "inputs": [
       "a",
       "a"
@@ -5196,7 +5196,7 @@
     "meta": "...",
     "name": "asegment",
     "type": "A->N",
-    "description": "Segment audio stream.",
+    "description": "分割音訊串流。",
     "inputs": [
       "a"
     ],
@@ -5227,7 +5227,7 @@
     "meta": "...",
     "name": "aselect",
     "type": "A->N",
-    "description": "Select audio frames to pass in output.",
+    "description": "選取要輸出的音訊影格。",
     "inputs": [
       "a"
     ],
@@ -5274,7 +5274,7 @@
     "meta": "...",
     "name": "asendcmd",
     "type": "A->A",
-    "description": "Send commands to filters.",
+    "description": "向濾鏡發送命令。",
     "inputs": [
       "a"
     ],
@@ -5321,7 +5321,7 @@
     "meta": "...",
     "name": "asetnsamples",
     "type": "A->A",
-    "description": "Set the number of samples for each output audio frames.",
+    "description": "設定每個輸出音訊影格的樣本數。",
     "inputs": [
       "a"
     ],
@@ -5368,7 +5368,7 @@
     "meta": "...",
     "name": "asetpts",
     "type": "A->A",
-    "description": "Set PTS for the output audio frame.",
+    "description": "設定輸出音訊影格的 PTS。",
     "inputs": [
       "a"
     ],
@@ -5391,7 +5391,7 @@
     "meta": "...",
     "name": "asetrate",
     "type": "A->A",
-    "description": "Change the sample rate without altering the data.",
+    "description": "在不改變數據的情況下變更取樣率。",
     "inputs": [
       "a"
     ],
@@ -5422,7 +5422,7 @@
     "meta": "...",
     "name": "asettb",
     "type": "A->A",
-    "description": "Set timebase for the audio output link.",
+    "description": "設定音訊輸出鏈路的時間基準。",
     "inputs": [
       "a"
     ],
@@ -5453,7 +5453,7 @@
     "meta": "...",
     "name": "ashowinfo",
     "type": "A->A",
-    "description": "Show textual information for each audio frame.",
+    "description": "顯示每個音訊影格的文字資訊。",
     "inputs": [
       "a"
     ],
@@ -5466,7 +5466,7 @@
     "meta": "T..",
     "name": "asidedata",
     "type": "A->A",
-    "description": "Manipulate audio frame side data.",
+    "description": "操作音訊影格附加數據。",
     "inputs": [
       "a"
     ],
@@ -5593,7 +5593,7 @@
     "meta": "TSC",
     "name": "asoftclip",
     "type": "A->A",
-    "description": "Audio Soft Clipper.",
+    "description": "音訊軟削波器。",
     "inputs": [
       "a"
     ],
@@ -5686,7 +5686,7 @@
     "meta": ".S.",
     "name": "aspectralstats",
     "type": "A->A",
-    "description": "Show frequency domain statistics about audio frames.",
+    "description": "顯示音訊影格的頻域統計資訊。",
     "inputs": [
       "a"
     ],
@@ -5885,7 +5885,7 @@
     "meta": "...",
     "name": "asplit",
     "type": "A->N",
-    "description": "Pass on the audio input to N audio outputs.",
+    "description": "將音訊輸入傳遞至 N 路音訊輸出。",
     "inputs": [
       "a"
     ],
@@ -5909,7 +5909,7 @@
     "meta": ".S.",
     "name": "astats",
     "type": "A->A",
-    "description": "Show time domain statistics about audio frames.",
+    "description": "顯示音訊影格的時域統計資訊。",
     "inputs": [
       "a"
     ],
@@ -6184,7 +6184,7 @@
     "meta": "..C",
     "name": "astreamselect",
     "type": "N->N",
-    "description": "Select audio streams",
+    "description": "選取音訊串流",
     "inputs": [
       "n",
       "n"
@@ -6216,7 +6216,7 @@
     "meta": "TSC",
     "name": "asubboost",
     "type": "A->A",
-    "description": "Boost subwoofer frequencies.",
+    "description": "增強超低音頻率。",
     "inputs": [
       "a"
     ],
@@ -6303,7 +6303,7 @@
     "meta": "TSC",
     "name": "asubcut",
     "type": "A->A",
-    "description": "Cut subwoofer frequencies.",
+    "description": "削減超低音頻率。",
     "inputs": [
       "a"
     ],
@@ -6342,7 +6342,7 @@
     "meta": "TSC",
     "name": "asupercut",
     "type": "A->A",
-    "description": "Cut super frequencies.",
+    "description": "削減超高頻率。",
     "inputs": [
       "a"
     ],
@@ -6381,7 +6381,7 @@
     "meta": "TSC",
     "name": "asuperpass",
     "type": "A->A",
-    "description": "Apply high order Butterworth band-pass filter.",
+    "description": "套用高階巴特沃斯帶通濾鏡。",
     "inputs": [
       "a"
     ],
@@ -6428,7 +6428,7 @@
     "meta": "TSC",
     "name": "asuperstop",
     "type": "A->A",
-    "description": "Apply high order Butterworth band-stop filter.",
+    "description": "套用高階巴特沃斯帶阻濾鏡。",
     "inputs": [
       "a"
     ],
@@ -6475,7 +6475,7 @@
     "meta": "..C",
     "name": "atempo",
     "type": "A->A",
-    "description": "Adjust audio tempo.",
+    "description": "調整音訊速度。",
     "inputs": [
       "a"
     ],
@@ -6498,7 +6498,7 @@
     "meta": "TSC",
     "name": "atilt",
     "type": "A->A",
-    "description": "Apply spectral tilt to audio.",
+    "description": "對音訊套用頻譜傾斜。",
     "inputs": [
       "a"
     ],
@@ -6553,7 +6553,7 @@
     "meta": "...",
     "name": "atrim",
     "type": "A->A",
-    "description": "Pick one continuous section from the input, drop the rest.",
+    "description": "從輸入中取出一段連續區段，捨棄其餘部分。",
     "inputs": [
       "a"
     ],
@@ -6648,7 +6648,7 @@
     "meta": "...",
     "name": "axcorrelate",
     "type": "AA->A",
-    "description": "Cross-correlate two audio streams.",
+    "description": "對兩路音訊串流進行互相關運算。",
     "inputs": [
       "a",
       "a"
@@ -6690,7 +6690,7 @@
     "meta": "TSC",
     "name": "bandpass",
     "type": "A->A",
-    "description": "Apply a two-pole Butterworth band-pass filter.",
+    "description": "套用雙極巴特沃斯帶通濾鏡。",
     "inputs": [
       "a"
     ],
@@ -7005,7 +7005,7 @@
     "meta": "TSC",
     "name": "bandreject",
     "type": "A->A",
-    "description": "Apply a two-pole Butterworth band-reject filter.",
+    "description": "套用雙極巴特沃斯帶阻濾鏡。",
     "inputs": [
       "a"
     ],
@@ -7312,7 +7312,7 @@
     "meta": "TSC",
     "name": "bass",
     "type": "A->A",
-    "description": "Boost or cut lower frequencies.",
+    "description": "增強或削減低頻。",
     "inputs": [
       "a"
     ],
@@ -7651,7 +7651,7 @@
     "meta": "TSC",
     "name": "biquad",
     "type": "A->A",
-    "description": "Apply a biquad IIR filter with the given coefficients.",
+    "description": "使用指定係數套用雙二階 IIR 濾鏡。",
     "inputs": [
       "a"
     ],
@@ -7914,7 +7914,7 @@
     "meta": "...",
     "name": "channelmap",
     "type": "A->A",
-    "description": "Remap audio channels.",
+    "description": "重新映射音訊聲道。",
     "inputs": [
       "a"
     ],
@@ -7945,7 +7945,7 @@
     "meta": "...",
     "name": "channelsplit",
     "type": "A->N",
-    "description": "Split audio into per-channel streams.",
+    "description": "將音訊分割為各聲道串流。",
     "inputs": [
       "a"
     ],
@@ -7976,7 +7976,7 @@
     "meta": "...",
     "name": "chorus",
     "type": "A->A",
-    "description": "Add a chorus effect to the audio.",
+    "description": "為音訊加入合唱效果。",
     "inputs": [
       "a"
     ],
@@ -8039,7 +8039,7 @@
     "meta": "...",
     "name": "compand",
     "type": "A->A",
-    "description": "Compress or expand audio dynamic range.",
+    "description": "壓縮或擴展音訊動態範圍。",
     "inputs": [
       "a"
     ],
@@ -8110,7 +8110,7 @@
     "meta": "T.C",
     "name": "compensationdelay",
     "type": "A->A",
-    "description": "Audio Compensation Delay Line.",
+    "description": "音訊補償延遲線。",
     "inputs": [
       "a"
     ],
@@ -8161,7 +8161,7 @@
       {
         "name": "temp",
         "type": "int",
-        "desc": "set temperature \u00b0C (from -50 to 50) (default 20)",
+        "desc": "set temperature °C (from -50 to 50) (default 20)",
         "min": -50,
         "max": 50,
         "default": 20
@@ -8173,7 +8173,7 @@
     "meta": "T.C",
     "name": "crossfeed",
     "type": "A->A",
-    "description": "Apply headphone crossfeed filter.",
+    "description": "套用耳機交叉饋送濾鏡。",
     "inputs": [
       "a"
     ],
@@ -8236,7 +8236,7 @@
     "meta": "TSC",
     "name": "crystalizer",
     "type": "A->A",
-    "description": "Simple audio noise sharpening filter.",
+    "description": "簡易音訊雜訊銳化濾鏡。",
     "inputs": [
       "a"
     ],
@@ -8267,7 +8267,7 @@
     "meta": "T..",
     "name": "dcshift",
     "type": "A->A",
-    "description": "Apply a DC shift to the audio.",
+    "description": "對音訊套用直流偏移。",
     "inputs": [
       "a"
     ],
@@ -8298,7 +8298,7 @@
     "meta": "T..",
     "name": "deesser",
     "type": "A->A",
-    "description": "Apply de-essing to the audio.",
+    "description": "對音訊套用去齒音處理。",
     "inputs": [
       "a"
     ],
@@ -8359,7 +8359,7 @@
     "meta": "T.C",
     "name": "dialoguenhance",
     "type": "A->A",
-    "description": "Audio Dialogue Enhancement.",
+    "description": "音訊對話增強。",
     "inputs": [
       "a"
     ],
@@ -8398,7 +8398,7 @@
     "meta": "...",
     "name": "drmeter",
     "type": "A->A",
-    "description": "Measure audio dynamic range.",
+    "description": "測量音訊動態範圍。",
     "inputs": [
       "a"
     ],
@@ -8421,7 +8421,7 @@
     "meta": "T.C",
     "name": "dynaudnorm",
     "type": "A->A",
-    "description": "Dynamic Audio Normalizer.",
+    "description": "動態音訊正規化器。",
     "inputs": [
       "a"
     ],
@@ -8644,7 +8644,7 @@
     "meta": "...",
     "name": "earwax",
     "type": "A->A",
-    "description": "Widen the stereo image.",
+    "description": "拓寬立體聲聲像。",
     "inputs": [
       "a"
     ],
@@ -8657,7 +8657,7 @@
     "meta": "...",
     "name": "ebur128",
     "type": "A->N",
-    "description": "EBU R128 scanner.",
+    "description": "EBU R128 響度掃描器。",
     "inputs": [
       "a"
     ],
@@ -8824,7 +8824,7 @@
     "meta": "TSC",
     "name": "equalizer",
     "type": "A->A",
-    "description": "Apply two-pole peaking equalization (EQ) filter.",
+    "description": "套用雙極峰值等化（EQ）濾鏡。",
     "inputs": [
       "a"
     ],
@@ -9147,7 +9147,7 @@
     "meta": "T.C",
     "name": "extrastereo",
     "type": "A->A",
-    "description": "Increase difference between stereo audio channels.",
+    "description": "增強立體聲左右聲道的差異。",
     "inputs": [
       "a"
     ],
@@ -9178,7 +9178,7 @@
     "meta": "..C",
     "name": "firequalizer",
     "type": "A->A",
-    "description": "Finite Impulse Response Equalizer.",
+    "description": "有限脈衝響應等化器。",
     "inputs": [
       "a"
     ],
@@ -9375,7 +9375,7 @@
     "meta": "...",
     "name": "flanger",
     "type": "A->A",
-    "description": "Apply a flanging effect to the audio.",
+    "description": "對音訊套用鑲邊效果。",
     "inputs": [
       "a"
     ],
@@ -9482,7 +9482,7 @@
     "meta": "...",
     "name": "haas",
     "type": "A->A",
-    "description": "Apply Haas Stereo Enhancer.",
+    "description": "套用 Haas 立體聲增強效果。",
     "inputs": [
       "a"
     ],
@@ -9619,7 +9619,7 @@
     "meta": "...",
     "name": "hdcd",
     "type": "A->A",
-    "description": "Apply High Definition Compatible Digital (HDCD) decoding.",
+    "description": "套用高畫質相容數位 (HDCD) 解碼。",
     "inputs": [
       "a"
     ],
@@ -9718,7 +9718,7 @@
     "meta": ".S.",
     "name": "headphone",
     "type": "N->A",
-    "description": "Apply headphone binaural spatialization with HRTFs in additional streams.",
+    "description": "使用額外串流中的 HRTF 套用耳機雙耳空間化效果。",
     "inputs": [
       "n"
     ],
@@ -9801,7 +9801,7 @@
     "meta": "TSC",
     "name": "highpass",
     "type": "A->A",
-    "description": "Apply a high-pass filter with 3dB point frequency.",
+    "description": "套用具有 3dB 截止頻率的高通濾鏡。",
     "inputs": [
       "a"
     ],
@@ -10124,7 +10124,7 @@
     "meta": "TSC",
     "name": "highshelf",
     "type": "A->A",
-    "description": "Apply a high shelf filter.",
+    "description": "套用高頻擱架濾鏡。",
     "inputs": [
       "a"
     ],
@@ -10463,7 +10463,7 @@
     "meta": "...",
     "name": "join",
     "type": "N->A",
-    "description": "Join multiple audio streams into multi-channel output.",
+    "description": "將多個音訊串流合併為多聲道輸出。",
     "inputs": [
       "a",
       "a"
@@ -10503,7 +10503,7 @@
     "meta": "...",
     "name": "loudnorm",
     "type": "A->A",
-    "description": "EBU R128 loudness normalization",
+    "description": "EBU R128 響度標準化。",
     "inputs": [
       "a"
     ],
@@ -10668,7 +10668,7 @@
     "meta": "TSC",
     "name": "lowpass",
     "type": "A->A",
-    "description": "Apply a low-pass filter with 3dB point frequency.",
+    "description": "套用具有 3dB 截止頻率的低通濾鏡。",
     "inputs": [
       "a"
     ],
@@ -10991,7 +10991,7 @@
     "meta": "TSC",
     "name": "lowshelf",
     "type": "A->A",
-    "description": "Apply a low shelf filter.",
+    "description": "套用低頻擱架濾鏡。",
     "inputs": [
       "a"
     ],
@@ -11330,7 +11330,7 @@
     "meta": "...",
     "name": "mcompand",
     "type": "A->A",
-    "description": "Multiband Compress or expand audio dynamic range.",
+    "description": "多頻段壓縮或擴展音訊動態範圍。",
     "inputs": [
       "a"
     ],
@@ -11353,7 +11353,7 @@
     "meta": "...",
     "name": "pan",
     "type": "A->A",
-    "description": "Remix channels with coefficients (panning).",
+    "description": "使用係數重新混合聲道（聲像調整）。",
     "inputs": [
       "a"
     ],
@@ -11376,7 +11376,7 @@
     "meta": "...",
     "name": "replaygain",
     "type": "A->A",
-    "description": "ReplayGain scanner.",
+    "description": "ReplayGain 掃描器。",
     "inputs": [
       "a"
     ],
@@ -11389,7 +11389,7 @@
     "meta": "..C",
     "name": "sidechaincompress",
     "type": "AA->A",
-    "description": "Sidechain compressor.",
+    "description": "側鏈壓縮器。",
     "inputs": [
       "a",
       "a"
@@ -11531,7 +11531,7 @@
     "meta": "T.C",
     "name": "sidechaingate",
     "type": "AA->A",
-    "description": "Audio sidechain gate.",
+    "description": "音訊側鏈閘門。",
     "inputs": [
       "a",
       "a"
@@ -11673,7 +11673,7 @@
     "meta": "...",
     "name": "silencedetect",
     "type": "A->A",
-    "description": "Detect silence.",
+    "description": "偵測靜音。",
     "inputs": [
       "a"
     ],
@@ -11736,7 +11736,7 @@
     "meta": "...",
     "name": "silenceremove",
     "type": "A->A",
-    "description": "Remove silence.",
+    "description": "移除靜音。",
     "inputs": [
       "a"
     ],
@@ -11877,7 +11877,7 @@
     "meta": "T.C",
     "name": "speechnorm",
     "type": "A->A",
-    "description": "Speech Normalizer.",
+    "description": "語音正規化器。",
     "inputs": [
       "a"
     ],
@@ -12052,7 +12052,7 @@
     "meta": "T.C",
     "name": "stereotools",
     "type": "A->A",
-    "description": "Apply various stereo tools.",
+    "description": "套用各種立體聲工具。",
     "inputs": [
       "a"
     ],
@@ -12301,7 +12301,7 @@
     "meta": "T.C",
     "name": "stereowiden",
     "type": "A->A",
-    "description": "Apply stereo widening effect.",
+    "description": "套用立體聲加寬效果。",
     "inputs": [
       "a"
     ],
@@ -12348,7 +12348,7 @@
     "meta": "...",
     "name": "superequalizer",
     "type": "A->A",
-    "description": "Apply 18 band equalization filter.",
+    "description": "套用 18 頻段均衡濾鏡。",
     "inputs": [
       "a"
     ],
@@ -12507,7 +12507,7 @@
     "meta": ".S.",
     "name": "surround",
     "type": "A->A",
-    "description": "Apply audio surround upmix filter.",
+    "description": "套用音訊環繞聲上混濾鏡。",
     "inputs": [
       "a"
     ],
@@ -13022,7 +13022,7 @@
     "meta": "TSC",
     "name": "tiltshelf",
     "type": "A->A",
-    "description": "Apply a tilt shelf filter.",
+    "description": "套用傾斜擱架濾鏡。",
     "inputs": [
       "a"
     ],
@@ -13361,7 +13361,7 @@
     "meta": "TSC",
     "name": "treble",
     "type": "A->A",
-    "description": "Boost or cut upper frequencies.",
+    "description": "提升或削減高頻。",
     "inputs": [
       "a"
     ],
@@ -13700,7 +13700,7 @@
     "meta": "T..",
     "name": "tremolo",
     "type": "A->A",
-    "description": "Apply tremolo effect.",
+    "description": "套用顫音效果。",
     "inputs": [
       "a"
     ],
@@ -13731,7 +13731,7 @@
     "meta": "T..",
     "name": "vibrato",
     "type": "A->A",
-    "description": "Apply vibrato effect.",
+    "description": "套用抖音效果。",
     "inputs": [
       "a"
     ],
@@ -13762,7 +13762,7 @@
     "meta": "T.C",
     "name": "virtualbass",
     "type": "A->A",
-    "description": "Audio Virtual Bass.",
+    "description": "音訊虛擬低音。",
     "inputs": [
       "a"
     ],
@@ -13793,7 +13793,7 @@
     "meta": "T.C",
     "name": "volume",
     "type": "A->A",
-    "description": "Change input volume.",
+    "description": "調整輸入音量。",
     "inputs": [
       "a"
     ],
@@ -13898,7 +13898,7 @@
     "meta": "...",
     "name": "volumedetect",
     "type": "A->A",
-    "description": "Detect audio volume.",
+    "description": "偵測音訊音量。",
     "inputs": [
       "a"
     ],
@@ -13911,7 +13911,7 @@
     "meta": "...",
     "name": "aevalsrc",
     "type": "|->A",
-    "description": "Generate an audio signal generated by an expression.",
+    "description": "依據表達式產生音訊訊號。",
     "inputs": [
       "|"
     ],
@@ -13998,7 +13998,7 @@
     "meta": "...",
     "name": "afirsrc",
     "type": "|->A",
-    "description": "Generate a FIR coefficients audio stream.",
+    "description": "產生 FIR 係數音訊串流。",
     "inputs": [
       "|"
     ],
@@ -14481,7 +14481,7 @@
     "meta": "...",
     "name": "anoisesrc",
     "type": "|->A",
-    "description": "Generate a noise audio signal.",
+    "description": "產生雜訊音訊訊號。",
     "inputs": [
       "|"
     ],
@@ -14678,7 +14678,7 @@
     "meta": "...",
     "name": "anullsrc",
     "type": "|->A",
-    "description": "Null audio source, return empty audio frames.",
+    "description": "空音訊來源，回傳空音訊訊框。",
     "inputs": [
       "|"
     ],
@@ -14757,7 +14757,7 @@
     "meta": "...",
     "name": "hilbert",
     "type": "|->A",
-    "description": "Generate a Hilbert transform FIR coefficients.",
+    "description": "產生希爾伯特轉換 FIR 係數。",
     "inputs": [
       "|"
     ],
@@ -15192,7 +15192,7 @@
     "meta": "...",
     "name": "sinc",
     "type": "|->A",
-    "description": "Generate a sinc kaiser-windowed low-pass, high-pass, band-pass, or band-reject FIR coefficients.",
+    "description": "產生 sinc kaiser 視窗化低通、高通、帶通或帶阻 FIR 係數。",
     "inputs": [
       "|"
     ],
@@ -15303,7 +15303,7 @@
     "meta": "...",
     "name": "sine",
     "type": "|->A",
-    "description": "Generate sine wave audio signal.",
+    "description": "產生正弦波音訊訊號。",
     "inputs": [
       "|"
     ],
@@ -15390,7 +15390,7 @@
     "meta": "...",
     "name": "anullsink",
     "type": "A->|",
-    "description": "Do absolutely nothing with the input audio.",
+    "description": "對輸入音訊不做任何處理。",
     "inputs": [
       "a"
     ],
@@ -15403,7 +15403,7 @@
     "meta": "...",
     "name": "addroi",
     "type": "V->V",
-    "description": "Add region of interest to frame.",
+    "description": "為畫面添加感興趣區域。",
     "inputs": [
       "v"
     ],
@@ -15466,7 +15466,7 @@
     "meta": "...",
     "name": "alphaextract",
     "type": "V->V",
-    "description": "Extract an alpha channel as a grayscale image component.",
+    "description": "將 Alpha 通道提取為灰階影像分量。",
     "inputs": [
       "v"
     ],
@@ -15479,7 +15479,7 @@
     "meta": "T..",
     "name": "alphamerge",
     "type": "VV->V",
-    "description": "Copy the luma value of the second input into the alpha channel of the first input.",
+    "description": "將第二個輸入的亮度值複製到第一個輸入的 Alpha 通道中。",
     "inputs": [
       "v",
       "v"
@@ -15494,7 +15494,7 @@
     "meta": "TSC",
     "name": "amplify",
     "type": "V->V",
-    "description": "Amplify changes between successive video frames.",
+    "description": "放大連續影格之間的差異。",
     "inputs": [
       "v"
     ],
@@ -15565,7 +15565,7 @@
     "meta": "...",
     "name": "ass",
     "type": "V->V",
-    "description": "Render ASS subtitles onto input video using the libass library.",
+    "description": "使用 libass 函式庫將 ASS 字幕渲染到輸入視訊上。",
     "inputs": [
       "v"
     ],
@@ -15642,7 +15642,7 @@
     "meta": "TSC",
     "name": "atadenoise",
     "type": "V->V",
-    "description": "Apply an Adaptive Temporal Averaging Denoiser.",
+    "description": "套用自適應時間平均降噪器。",
     "inputs": [
       "v"
     ],
@@ -15763,7 +15763,7 @@
     "meta": "T.C",
     "name": "avgblur",
     "type": "V->V",
-    "description": "Apply Average Blur filter.",
+    "description": "套用平均模糊濾鏡。",
     "inputs": [
       "v"
     ],
@@ -15802,7 +15802,7 @@
     "meta": "T.C",
     "name": "bbox",
     "type": "V->V",
-    "description": "Compute bounding box for each frame.",
+    "description": "計算每個畫面的邊界框。",
     "inputs": [
       "v"
     ],
@@ -15825,7 +15825,7 @@
     "meta": "...",
     "name": "bench",
     "type": "V->V",
-    "description": "Benchmark part of a filtergraph.",
+    "description": "對濾鏡圖的一部分進行基準測試。",
     "inputs": [
       "v"
     ],
@@ -15858,7 +15858,7 @@
     "meta": "TSC",
     "name": "bilateral",
     "type": "V->V",
-    "description": "Apply Bilateral filter.",
+    "description": "套用雙邊濾鏡。",
     "inputs": [
       "v"
     ],
@@ -15897,7 +15897,7 @@
     "meta": "T..",
     "name": "bitplanenoise",
     "type": "V->V",
-    "description": "Measure bit plane noise.",
+    "description": "測量位元平面雜訊。",
     "inputs": [
       "v"
     ],
@@ -15928,7 +15928,7 @@
     "meta": ".S.",
     "name": "blackdetect",
     "type": "V->V",
-    "description": "Detect video intervals that are (almost) black.",
+    "description": "偵測（幾乎）全黑的視訊區間。",
     "inputs": [
       "v"
     ],
@@ -15991,7 +15991,7 @@
     "meta": "...",
     "name": "blackframe",
     "type": "V->V",
-    "description": "Detect frames that are (almost) black.",
+    "description": "偵測（幾乎）全黑的畫面。",
     "inputs": [
       "v"
     ],
@@ -16030,7 +16030,7 @@
     "meta": "TSC",
     "name": "blend",
     "type": "VV->V",
-    "description": "Blend two video frames into each other.",
+    "description": "將兩個視訊畫面混合在一起。",
     "inputs": [
       "v",
       "v"
@@ -17016,7 +17016,7 @@
     "meta": "...",
     "name": "blockdetect",
     "type": "V->V",
-    "description": "Blockdetect filter.",
+    "description": "區塊偵測濾鏡。",
     "inputs": [
       "v"
     ],
@@ -17055,7 +17055,7 @@
     "meta": "...",
     "name": "blurdetect",
     "type": "V->V",
-    "description": "Blurdetect filter.",
+    "description": "模糊偵測濾鏡。",
     "inputs": [
       "v"
     ],
@@ -17126,7 +17126,7 @@
     "meta": "TS.",
     "name": "bm3d",
     "type": "N->V",
-    "description": "Block-Matching 3D denoiser.",
+    "description": "區塊匹配 3D 降噪器。",
     "inputs": [
       "n"
     ],
@@ -17239,7 +17239,7 @@
     "meta": "T..",
     "name": "boxblur",
     "type": "V->V",
-    "description": "Blur the input.",
+    "description": "對輸入套用模糊效果。",
     "inputs": [
       "v"
     ],
@@ -17350,7 +17350,7 @@
     "meta": "TS.",
     "name": "bwdif",
     "type": "V->V",
-    "description": "Deinterlace the input image.",
+    "description": "對輸入影像進行去交錯。",
     "inputs": [
       "v"
     ],
@@ -17423,7 +17423,7 @@
     "meta": "TSC",
     "name": "cas",
     "type": "V->V",
-    "description": "Contrast Adaptive Sharpen.",
+    "description": "對比度自適應銳化。",
     "inputs": [
       "v"
     ],
@@ -17454,7 +17454,7 @@
     "meta": "TSC",
     "name": "chromahold",
     "type": "V->V",
-    "description": "Turns a certain color range into gray.",
+    "description": "將特定色彩範圍轉為灰色。",
     "inputs": [
       "v"
     ],
@@ -17501,7 +17501,7 @@
     "meta": "TSC",
     "name": "chromakey",
     "type": "V->V",
-    "description": "Turns a certain color into transparency. Operates on YUV colors.",
+    "description": "將特定顏色轉為透明，對 YUV 色彩操作。",
     "inputs": [
       "v"
     ],
@@ -17548,7 +17548,7 @@
     "meta": "TSC",
     "name": "chromanr",
     "type": "V->V",
-    "description": "Reduce chrominance noise.",
+    "description": "降低色度雜訊。",
     "inputs": [
       "v"
     ],
@@ -17645,7 +17645,7 @@
     "meta": "TSC",
     "name": "chromashift",
     "type": "V->V",
-    "description": "Shift chroma.",
+    "description": "偏移色度。",
     "inputs": [
       "v"
     ],
@@ -17710,7 +17710,7 @@
     "meta": "...",
     "name": "ciescope",
     "type": "V->V",
-    "description": "Video CIE scope.",
+    "description": "視訊 CIE 色彩範圍圖。",
     "inputs": [
       "v"
     ],
@@ -17951,7 +17951,7 @@
     "meta": "T..",
     "name": "codecview",
     "type": "V->V",
-    "description": "Visualize information about some codecs.",
+    "description": "視覺化顯示部分編解碼器資訊。",
     "inputs": [
       "v"
     ],
@@ -18084,7 +18084,7 @@
     "meta": "TSC",
     "name": "colorbalance",
     "type": "V->V",
-    "description": "Adjust the color balance.",
+    "description": "調整色彩平衡。",
     "inputs": [
       "v"
     ],
@@ -18179,7 +18179,7 @@
     "meta": "TSC",
     "name": "colorchannelmixer",
     "type": "V->V",
-    "description": "Adjust colors by mixing color channels.",
+    "description": "透過混合色彩通道調整色彩。",
     "inputs": [
       "v"
     ],
@@ -18368,7 +18368,7 @@
     "meta": "TSC",
     "name": "colorcontrast",
     "type": "V->V",
-    "description": "Adjust color contrast between RGB components.",
+    "description": "調整 RGB 分量之間的色彩對比度。",
     "inputs": [
       "v"
     ],
@@ -18439,7 +18439,7 @@
     "meta": "TSC",
     "name": "colorcorrect",
     "type": "V->V",
-    "description": "Adjust color white balance selectively for blacks and whites.",
+    "description": "針對黑色和白色選擇性地調整白平衡。",
     "inputs": [
       "v"
     ],
@@ -18520,7 +18520,7 @@
     "meta": "TSC",
     "name": "colorize",
     "type": "V->V",
-    "description": "Overlay a solid color on the video stream.",
+    "description": "在視訊串流上疊加純色。",
     "inputs": [
       "v"
     ],
@@ -18567,7 +18567,7 @@
     "meta": "TSC",
     "name": "colorkey",
     "type": "V->V",
-    "description": "Turns a certain color into transparency. Operates on RGB colors.",
+    "description": "將特定顏色轉為透明，對 RGB 色彩操作。",
     "inputs": [
       "v"
     ],
@@ -18606,7 +18606,7 @@
     "meta": "TSC",
     "name": "colorhold",
     "type": "V->V",
-    "description": "Turns a certain color range into gray. Operates on RGB colors.",
+    "description": "將特定色彩範圍轉為灰色，對 RGB 色彩操作。",
     "inputs": [
       "v"
     ],
@@ -18645,7 +18645,7 @@
     "meta": "TSC",
     "name": "colorlevels",
     "type": "V->V",
-    "description": "Adjust the color levels.",
+    "description": "調整色彩色階。",
     "inputs": [
       "v"
     ],
@@ -18826,7 +18826,7 @@
     "meta": "TSC",
     "name": "colormap",
     "type": "VVV->V",
-    "description": "Apply custom Color Maps to video stream.",
+    "description": "對視訊串流套用自訂色彩對應。",
     "inputs": [
       "v",
       "v",
@@ -18895,7 +18895,7 @@
     "meta": "TS.",
     "name": "colormatrix",
     "type": "V->V",
-    "description": "Convert color matrix.",
+    "description": "轉換色彩矩陣。",
     "inputs": [
       "v"
     ],
@@ -18994,7 +18994,7 @@
     "meta": "TS.",
     "name": "colorspace",
     "type": "V->V",
-    "description": "Convert between colorspaces.",
+    "description": "在色彩空間之間轉換。",
     "inputs": [
       "v"
     ],
@@ -19579,7 +19579,7 @@
     "meta": "TSC",
     "name": "colortemperature",
     "type": "V->V",
-    "description": "Adjust color temperature of video.",
+    "description": "調整視訊的色溫。",
     "inputs": [
       "v"
     ],
@@ -19618,7 +19618,7 @@
     "meta": "TSC",
     "name": "convolution",
     "type": "V->V",
-    "description": "Apply convolution filter.",
+    "description": "套用卷積濾鏡。",
     "inputs": [
       "v"
     ],
@@ -19817,7 +19817,7 @@
     "meta": "TS.",
     "name": "convolve",
     "type": "VV->V",
-    "description": "Convolve first video stream with second video stream.",
+    "description": "將第一個視訊串流與第二個視訊串流進行卷積。",
     "inputs": [
       "v",
       "v"
@@ -19867,7 +19867,7 @@
     "meta": "...",
     "name": "copy",
     "type": "V->V",
-    "description": "Copy the input video unchanged to the output.",
+    "description": "將輸入視訊原樣複製到輸出。",
     "inputs": [
       "v"
     ],
@@ -19880,7 +19880,7 @@
     "meta": "...",
     "name": "cover_rect",
     "type": "V->V",
-    "description": "Find and cover a user specified object.",
+    "description": "尋找並遮蔽使用者指定的物件。",
     "inputs": [
       "v"
     ],
@@ -19921,7 +19921,7 @@
     "meta": "..C",
     "name": "crop",
     "type": "V->V",
-    "description": "Crop the input video.",
+    "description": "裁剪輸入視訊。",
     "inputs": [
       "v"
     ],
@@ -20000,7 +20000,7 @@
     "meta": "T..",
     "name": "cropdetect",
     "type": "V->V",
-    "description": "Auto-detect crop size.",
+    "description": "自動偵測裁剪尺寸。",
     "inputs": [
       "v"
     ],
@@ -20105,7 +20105,7 @@
     "meta": "...",
     "name": "cue",
     "type": "V->V",
-    "description": "Delay filtering to match a cue.",
+    "description": "延遲濾鏡處理以配合提示點。",
     "inputs": [
       "v"
     ],
@@ -20144,7 +20144,7 @@
     "meta": "TSC",
     "name": "curves",
     "type": "V->V",
-    "description": "Adjust components curves.",
+    "description": "調整色彩曲線分量。",
     "inputs": [
       "v"
     ],
@@ -20319,7 +20319,7 @@
     "meta": ".SC",
     "name": "datascope",
     "type": "V->V",
-    "description": "Video data analysis.",
+    "description": "視訊資料分析。",
     "inputs": [
       "v"
     ],
@@ -20430,7 +20430,7 @@
     "meta": "T.C",
     "name": "dblur",
     "type": "V->V",
-    "description": "Apply Directional Blur filter.",
+    "description": "套用方向性模糊濾鏡。",
     "inputs": [
       "v"
     ],
@@ -20469,7 +20469,7 @@
     "meta": "TS.",
     "name": "dctdnoiz",
     "type": "V->V",
-    "description": "Denoise frames using 2D DCT.",
+    "description": "使用 2D DCT 對畫面降噪。",
     "inputs": [
       "v"
     ],
@@ -20532,7 +20532,7 @@
     "meta": "TSC",
     "name": "deband",
     "type": "V->V",
-    "description": "Debands video.",
+    "description": "對視訊進行去色帶處理。",
     "inputs": [
       "v"
     ],
@@ -20643,7 +20643,7 @@
     "meta": "T.C",
     "name": "deblock",
     "type": "V->V",
-    "description": "Deblock video.",
+    "description": "對視訊進行去方塊處理。",
     "inputs": [
       "v"
     ],
@@ -20724,7 +20724,7 @@
     "meta": "...",
     "name": "decimate",
     "type": "N->V",
-    "description": "Decimate frames (post field matching filter).",
+    "description": "抽取畫面（場匹配後置濾鏡）。",
     "inputs": [
       "n"
     ],
@@ -20803,7 +20803,7 @@
     "meta": "TS.",
     "name": "deconvolve",
     "type": "VV->V",
-    "description": "Deconvolve first video stream with second video stream.",
+    "description": "將第一個視訊串流與第二個視訊串流進行反卷積。",
     "inputs": [
       "v",
       "v"
@@ -20853,7 +20853,7 @@
     "meta": "TS.",
     "name": "dedot",
     "type": "V->V",
-    "description": "Reduce cross-luminance and cross-color.",
+    "description": "降低交叉亮度和交叉色彩。",
     "inputs": [
       "v"
     ],
@@ -20918,7 +20918,7 @@
     "meta": "TSC",
     "name": "deflate",
     "type": "V->V",
-    "description": "Apply deflate effect.",
+    "description": "套用收縮效果。",
     "inputs": [
       "v"
     ],
@@ -20965,7 +20965,7 @@
     "meta": "...",
     "name": "deflicker",
     "type": "V->V",
-    "description": "Remove temporal frame luminance variations.",
+    "description": "移除時間性畫面亮度變化。",
     "inputs": [
       "v"
     ],
@@ -21080,7 +21080,7 @@
     "meta": "...",
     "name": "dejudder",
     "type": "V->V",
-    "description": "Remove judder produced by pullup.",
+    "description": "移除由 pullup 產生的抖動。",
     "inputs": [
       "v"
     ],
@@ -21103,7 +21103,7 @@
     "meta": "T..",
     "name": "delogo",
     "type": "V->V",
-    "description": "Remove logo from input video.",
+    "description": "從輸入視訊中移除標誌。",
     "inputs": [
       "v"
     ],
@@ -21158,7 +21158,7 @@
     "meta": "T..",
     "name": "derain",
     "type": "V->V",
-    "description": "Apply derain filter to the input.",
+    "description": "對輸入套用去雨濾鏡。",
     "inputs": [
       "v"
     ],
@@ -21229,7 +21229,7 @@
     "meta": "...",
     "name": "deshake",
     "type": "V->V",
-    "description": "Stabilize shaky video.",
+    "description": "穩定抖動的視訊。",
     "inputs": [
       "v"
     ],
@@ -21368,7 +21368,7 @@
     "meta": "TSC",
     "name": "despill",
     "type": "V->V",
-    "description": "Despill video.",
+    "description": "對視訊進行去溢色處理。",
     "inputs": [
       "v"
     ],
@@ -21457,7 +21457,7 @@
     "meta": "...",
     "name": "detelecine",
     "type": "V->V",
-    "description": "Apply an inverse telecine pattern.",
+    "description": "套用逆向 Telecine 模式。",
     "inputs": [
       "v"
     ],
@@ -21514,7 +21514,7 @@
     "meta": "TSC",
     "name": "dilation",
     "type": "V->V",
-    "description": "Apply dilation effect.",
+    "description": "套用膨脹效果。",
     "inputs": [
       "v"
     ],
@@ -21569,7 +21569,7 @@
     "meta": "T..",
     "name": "displace",
     "type": "VVV->V",
-    "description": "Displace pixels.",
+    "description": "置換像素。",
     "inputs": [
       "v",
       "v",
@@ -21612,7 +21612,7 @@
     "meta": "...",
     "name": "dnn_classify",
     "type": "V->V",
-    "description": "Apply DNN classify filter to the input.",
+    "description": "對輸入套用 DNN 分類濾鏡。",
     "inputs": [
       "v"
     ],
@@ -21707,7 +21707,7 @@
     "meta": "...",
     "name": "dnn_detect",
     "type": "V->V",
-    "description": "Apply DNN detect filter to the input.",
+    "description": "對輸入套用 DNN 偵測濾鏡。",
     "inputs": [
       "v"
     ],
@@ -21794,7 +21794,7 @@
     "meta": "...",
     "name": "dnn_processing",
     "type": "V->V",
-    "description": "Apply DNN processing filter to the input.",
+    "description": "對輸入套用 DNN 處理濾鏡。",
     "inputs": [
       "v"
     ],
@@ -21871,7 +21871,7 @@
     "meta": ".S.",
     "name": "doubleweave",
     "type": "V->V",
-    "description": "Weave input video fields into double number of frames.",
+    "description": "將輸入視訊場編織為雙倍數量的畫面。",
     "inputs": [
       "v"
     ],
@@ -21912,7 +21912,7 @@
     "meta": "T.C",
     "name": "drawbox",
     "type": "V->V",
-    "description": "Draw a colored box on the input video.",
+    "description": "在輸入視訊上繪製彩色方框。",
     "inputs": [
       "v"
     ],
@@ -22023,7 +22023,7 @@
     "meta": "...",
     "name": "drawgraph",
     "type": "V->V",
-    "description": "Draw a graph using input video metadata.",
+    "description": "使用輸入視訊元資料繪製圖表。",
     "inputs": [
       "v"
     ],
@@ -22210,7 +22210,7 @@
     "meta": "T.C",
     "name": "drawgrid",
     "type": "V->V",
-    "description": "Draw a colored grid on the input video.",
+    "description": "在輸入視訊上繪製彩色格線。",
     "inputs": [
       "v"
     ],
@@ -22313,7 +22313,7 @@
     "meta": "T.C",
     "name": "drawtext",
     "type": "V->V",
-    "description": "Draw text on top of video frames using libfreetype library.",
+    "description": "使用 libfreetype 函式庫在視訊畫面上繪製文字。",
     "inputs": [
       "v"
     ],
@@ -22682,7 +22682,7 @@
     "meta": "T..",
     "name": "edgedetect",
     "type": "V->V",
-    "description": "Detect and draw edge.",
+    "description": "偵測並繪製邊緣。",
     "inputs": [
       "v"
     ],
@@ -22769,7 +22769,7 @@
     "meta": "...",
     "name": "elbg",
     "type": "V->V",
-    "description": "Apply posterize effect, using the ELBG algorithm.",
+    "description": "使用 ELBG 演算法套用色調分離效果。",
     "inputs": [
       "v"
     ],
@@ -22848,7 +22848,7 @@
     "meta": "T..",
     "name": "entropy",
     "type": "V->V",
-    "description": "Measure video frames entropy.",
+    "description": "測量視訊畫面的熵值。",
     "inputs": [
       "v"
     ],
@@ -22881,7 +22881,7 @@
     "meta": ".S.",
     "name": "epx",
     "type": "V->V",
-    "description": "Scale the input using EPX algorithm.",
+    "description": "使用 EPX 演算法對輸入進行縮放。",
     "inputs": [
       "v"
     ],
@@ -22904,7 +22904,7 @@
     "meta": "T.C",
     "name": "eq",
     "type": "V->V",
-    "description": "Adjust brightness, contrast, gamma, and saturation.",
+    "description": "調整亮度、對比度、Gamma 值和飽和度。",
     "inputs": [
       "v"
     ],
@@ -23001,7 +23001,7 @@
     "meta": "TSC",
     "name": "erosion",
     "type": "V->V",
-    "description": "Apply erosion effect.",
+    "description": "套用侵蝕效果。",
     "inputs": [
       "v"
     ],
@@ -23056,7 +23056,7 @@
     "meta": "TSC",
     "name": "estdif",
     "type": "V->V",
-    "description": "Apply Edge Slope Tracing deinterlace.",
+    "description": "套用邊緣斜率追蹤去交錯。",
     "inputs": [
       "v"
     ],
@@ -23191,7 +23191,7 @@
     "meta": "TSC",
     "name": "exposure",
     "type": "V->V",
-    "description": "Adjust exposure of the video stream.",
+    "description": "調整視訊串流的曝光度。",
     "inputs": [
       "v"
     ],
@@ -23222,7 +23222,7 @@
     "meta": "...",
     "name": "extractplanes",
     "type": "V->N",
-    "description": "Extract planes as grayscale frames.",
+    "description": "將平面提取為灰階畫面。",
     "inputs": [
       "v"
     ],
@@ -23275,7 +23275,7 @@
     "meta": "TS.",
     "name": "fade",
     "type": "V->V",
-    "description": "Fade in/out input video.",
+    "description": "對輸入視訊套用淡入/淡出效果。",
     "inputs": [
       "v"
     ],
@@ -23414,7 +23414,7 @@
     "meta": "..C",
     "name": "feedback",
     "type": "VV->VV",
-    "description": "Apply feedback video filter.",
+    "description": "套用回饋視訊濾鏡。",
     "inputs": [
       "v",
       "v"
@@ -23463,7 +23463,7 @@
     "meta": "TSC",
     "name": "fftdnoiz",
     "type": "V->V",
-    "description": "Denoise frames using 3D FFT.",
+    "description": "使用 3D FFT 對畫面降噪。",
     "inputs": [
       "v"
     ],
@@ -23650,7 +23650,7 @@
     "meta": "TS.",
     "name": "fftfilt",
     "type": "V->V",
-    "description": "Apply arbitrary expressions to pixels in frequency domain.",
+    "description": "在頻域中對像素套用任意表達式。",
     "inputs": [
       "v"
     ],
@@ -23731,7 +23731,7 @@
     "meta": "...",
     "name": "field",
     "type": "V->V",
-    "description": "Extract a field from the input video.",
+    "description": "從輸入視訊中提取場。",
     "inputs": [
       "v"
     ],
@@ -23764,7 +23764,7 @@
     "meta": "...",
     "name": "fieldhint",
     "type": "V->V",
-    "description": "Field matching using hints.",
+    "description": "使用提示進行場匹配。",
     "inputs": [
       "v"
     ],
@@ -23809,7 +23809,7 @@
     "meta": "...",
     "name": "fieldmatch",
     "type": "N->V",
-    "description": "Field matching for inverse telecine.",
+    "description": "逆向 Telecine 的場匹配。",
     "inputs": [
       "n"
     ],
@@ -24026,7 +24026,7 @@
     "meta": "T..",
     "name": "fieldorder",
     "type": "V->V",
-    "description": "Set the field order.",
+    "description": "設定場順序。",
     "inputs": [
       "v"
     ],
@@ -24059,7 +24059,7 @@
     "meta": "T.C",
     "name": "fillborders",
     "type": "V->V",
-    "description": "Fill borders of the input video.",
+    "description": "填充輸入視訊的邊界。",
     "inputs": [
       "v"
     ],
@@ -24152,7 +24152,7 @@
     "meta": "...",
     "name": "find_rect",
     "type": "V->V",
-    "description": "Find a user specified object.",
+    "description": "尋找使用者指定的物件。",
     "inputs": [
       "v"
     ],
@@ -24231,7 +24231,7 @@
     "meta": "T..",
     "name": "floodfill",
     "type": "V->V",
-    "description": "Fill area with same color with another color.",
+    "description": "用另一種顏色填充相同顏色的區域。",
     "inputs": [
       "v"
     ],
@@ -24326,7 +24326,7 @@
     "meta": "...",
     "name": "format",
     "type": "V->V",
-    "description": "Convert the input video to one of the specified pixel formats.",
+    "description": "將輸入視訊轉換為指定的像素格式之一。",
     "inputs": [
       "v"
     ],
@@ -24349,7 +24349,7 @@
     "meta": "...",
     "name": "fps",
     "type": "V->V",
-    "description": "Force constant framerate.",
+    "description": "強制固定幀率。",
     "inputs": [
       "v"
     ],
@@ -24428,7 +24428,7 @@
     "meta": "...",
     "name": "framepack",
     "type": "VV->V",
-    "description": "Generate a frame packed stereoscopic video.",
+    "description": "產生封裝式立體視訊。",
     "inputs": [
       "v",
       "v"
@@ -24474,7 +24474,7 @@
     "meta": ".S.",
     "name": "framerate",
     "type": "V->V",
-    "description": "Upsamples or downsamples progressive source between specified frame rates.",
+    "description": "在指定幀率之間對逐行掃描來源進行升頻或降頻。",
     "inputs": [
       "v"
     ],
@@ -24539,7 +24539,7 @@
     "meta": "T..",
     "name": "framestep",
     "type": "V->V",
-    "description": "Select one frame every N frames.",
+    "description": "每 N 個畫面選取一個畫面。",
     "inputs": [
       "v"
     ],
@@ -24562,7 +24562,7 @@
     "meta": "...",
     "name": "freezedetect",
     "type": "V->V",
-    "description": "Detects frozen video input.",
+    "description": "偵測凍結的視訊輸入。",
     "inputs": [
       "v"
     ],
@@ -24609,7 +24609,7 @@
     "meta": "...",
     "name": "freezeframes",
     "type": "VV->V",
-    "description": "Freeze video frames.",
+    "description": "凍結視訊畫面。",
     "inputs": [
       "v",
       "v"
@@ -24649,7 +24649,7 @@
     "meta": "T..",
     "name": "fspp",
     "type": "V->V",
-    "description": "Apply Fast Simple Post-processing filter.",
+    "description": "套用快速簡單後製濾鏡。",
     "inputs": [
       "v"
     ],
@@ -24696,7 +24696,7 @@
     "meta": "TSC",
     "name": "gblur",
     "type": "V->V",
-    "description": "Apply Gaussian Blur filter.",
+    "description": "套用高斯模糊濾鏡。",
     "inputs": [
       "v"
     ],
@@ -24743,7 +24743,7 @@
     "meta": "TS.",
     "name": "geq",
     "type": "V->V",
-    "description": "Apply generic equation to each pixel.",
+    "description": "對每個像素套用通用方程式。",
     "inputs": [
       "v"
     ],
@@ -24922,7 +24922,7 @@
     "meta": "T..",
     "name": "gradfun",
     "type": "V->V",
-    "description": "Debands video quickly using gradients.",
+    "description": "使用漸層快速對視訊去色帶。",
     "inputs": [
       "v"
     ],
@@ -24953,7 +24953,7 @@
     "meta": "...",
     "name": "graphmonitor",
     "type": "V->V",
-    "description": "Show various filtergraph stats.",
+    "description": "顯示各種濾鏡圖統計資訊。",
     "inputs": [
       "v"
     ],
@@ -25200,7 +25200,7 @@
     "meta": "TS.",
     "name": "grayworld",
     "type": "V->V",
-    "description": "Adjust white balance using LAB gray world algorithm",
+    "description": "使用 LAB 灰色世界演算法調整白平衡。",
     "inputs": [
       "v"
     ],
@@ -25214,7 +25214,7 @@
     "meta": "TS.",
     "name": "greyedge",
     "type": "V->V",
-    "description": "Estimates scene illumination by grey edge assumption.",
+    "description": "以灰邊假設估算場景照明。",
     "inputs": [
       "v"
     ],
@@ -25253,7 +25253,7 @@
     "meta": "TSC",
     "name": "guided",
     "type": "N->V",
-    "description": "Apply Guided filter.",
+    "description": "套用引導濾鏡。",
     "inputs": [
       "n"
     ],
@@ -25336,7 +25336,7 @@
     "meta": "TSC",
     "name": "haldclut",
     "type": "VV->V",
-    "description": "Adjust colors using a Hald CLUT.",
+    "description": "使用 Hald CLUT 調整色彩。",
     "inputs": [
       "v",
       "v"
@@ -25400,7 +25400,7 @@
     "meta": "TS.",
     "name": "hflip",
     "type": "V->V",
-    "description": "Horizontally flip the input video.",
+    "description": "水平翻轉輸入視訊。",
     "inputs": [
       "v"
     ],
@@ -25414,7 +25414,7 @@
     "meta": "T..",
     "name": "histeq",
     "type": "V->V",
-    "description": "Apply global color histogram equalization.",
+    "description": "套用全域色彩直方圖均衡化。",
     "inputs": [
       "v"
     ],
@@ -25467,7 +25467,7 @@
     "meta": "...",
     "name": "histogram",
     "type": "V->V",
-    "description": "Compute and draw a histogram.",
+    "description": "計算並繪製直方圖。",
     "inputs": [
       "v"
     ],
@@ -25726,7 +25726,7 @@
     "meta": "TSC",
     "name": "hqdn3d",
     "type": "V->V",
-    "description": "Apply a High Quality 3D Denoiser.",
+    "description": "套用高品質 3D 降噪器。",
     "inputs": [
       "v"
     ],
@@ -25773,7 +25773,7 @@
     "meta": ".S.",
     "name": "hqx",
     "type": "V->V",
-    "description": "Scale the input by 2, 3 or 4 using the hq*x magnification algorithm.",
+    "description": "使用 hq*x 放大演算法將輸入縮放 2、3 或 4 倍。",
     "inputs": [
       "v"
     ],
@@ -25796,7 +25796,7 @@
     "meta": ".S.",
     "name": "hstack",
     "type": "N->V",
-    "description": "Stack video inputs horizontally.",
+    "description": "將視訊輸入水平堆疊。",
     "inputs": [
       "v",
       "v"
@@ -25828,7 +25828,7 @@
     "meta": "TSC",
     "name": "hsvhold",
     "type": "V->V",
-    "description": "Turns a certain HSV range into gray.",
+    "description": "將特定 HSV 範圍轉為灰色。",
     "inputs": [
       "v"
     ],
@@ -25883,7 +25883,7 @@
     "meta": "TSC",
     "name": "hsvkey",
     "type": "V->V",
-    "description": "Turns a certain HSV range into transparency. Operates on YUV colors.",
+    "description": "將特定 HSV 範圍轉為透明，對 YUV 色彩操作。",
     "inputs": [
       "v"
     ],
@@ -25938,7 +25938,7 @@
     "meta": "T.C",
     "name": "hue",
     "type": "V->V",
-    "description": "Adjust the hue and saturation of the input video.",
+    "description": "調整輸入視訊的色調和飽和度。",
     "inputs": [
       "v"
     ],
@@ -25985,7 +25985,7 @@
     "meta": "TSC",
     "name": "huesaturation",
     "type": "V->V",
-    "description": "Apply hue-saturation-intensity adjustments.",
+    "description": "套用色調-飽和度-亮度調整。",
     "inputs": [
       "v"
     ],
@@ -26102,7 +26102,7 @@
     "meta": "...",
     "name": "hwdownload",
     "type": "V->V",
-    "description": "Download a hardware frame to a normal frame",
+    "description": "將硬體畫面下載為普通畫面。",
     "inputs": [
       "v"
     ],
@@ -26115,7 +26115,7 @@
     "meta": "...",
     "name": "hwmap",
     "type": "V->V",
-    "description": "Map hardware frames",
+    "description": "映射硬體畫面。",
     "inputs": [
       "v"
     ],
@@ -26172,7 +26172,7 @@
     "meta": "...",
     "name": "hwupload",
     "type": "V->V",
-    "description": "Upload a normal frame to a hardware frame",
+    "description": "將普通畫面上傳為硬體畫面。",
     "inputs": [
       "v"
     ],
@@ -26195,7 +26195,7 @@
     "meta": "T..",
     "name": "hysteresis",
     "type": "VV->V",
-    "description": "Grow first stream into second stream by connecting components.",
+    "description": "透過連接元件將第一個串流擴展至第二個串流。",
     "inputs": [
       "v",
       "v"
@@ -26227,7 +26227,7 @@
     "meta": "TS.",
     "name": "identity",
     "type": "VV->V",
-    "description": "Calculate the Identity between two video streams.",
+    "description": "計算兩個視訊串流之間的相似度。",
     "inputs": [
       "v",
       "v"
@@ -26242,7 +26242,7 @@
     "meta": "...",
     "name": "idet",
     "type": "V->V",
-    "description": "Interlace detect Filter.",
+    "description": "交錯偵測濾鏡。",
     "inputs": [
       "v"
     ],
@@ -26297,7 +26297,7 @@
     "meta": "T.C",
     "name": "il",
     "type": "V->V",
-    "description": "Deinterleave or interleave fields.",
+    "description": "反交錯或交錯場。",
     "inputs": [
       "v"
     ],
@@ -26540,7 +26540,7 @@
     "meta": "TSC",
     "name": "inflate",
     "type": "V->V",
-    "description": "Apply inflate effect.",
+    "description": "套用膨脹效果。",
     "inputs": [
       "v"
     ],
@@ -26587,7 +26587,7 @@
     "meta": "...",
     "name": "interlace",
     "type": "V->V",
-    "description": "Convert progressive video into interlaced.",
+    "description": "將逐行掃描視訊轉換為交錯式。",
     "inputs": [
       "v"
     ],
@@ -26642,7 +26642,7 @@
     "meta": "...",
     "name": "interleave",
     "type": "N->V",
-    "description": "Temporally interleave video inputs.",
+    "description": "在時間上交錯視訊輸入。",
     "inputs": [
       "n"
     ],
@@ -26695,7 +26695,7 @@
     "meta": "...",
     "name": "kerndeint",
     "type": "V->V",
-    "description": "Apply kernel deinterlacing to the input.",
+    "description": "對輸入套用核心去交錯。",
     "inputs": [
       "v"
     ],
@@ -26750,7 +26750,7 @@
     "meta": "TSC",
     "name": "kirsch",
     "type": "V->V",
-    "description": "Apply kirsch operator.",
+    "description": "套用 Kirsch 運算子。",
     "inputs": [
       "v"
     ],
@@ -26789,7 +26789,7 @@
     "meta": "TSC",
     "name": "lagfun",
     "type": "V->V",
-    "description": "Slowly update darker pixels.",
+    "description": "緩慢更新較暗的像素。",
     "inputs": [
       "v"
     ],
@@ -26820,7 +26820,7 @@
     "meta": "T..",
     "name": "latency",
     "type": "V->V",
-    "description": "Report video filtering latency.",
+    "description": "回報視訊濾鏡延遲。",
     "inputs": [
       "v"
     ],
@@ -26833,7 +26833,7 @@
     "meta": "TSC",
     "name": "lenscorrection",
     "type": "V->V",
-    "description": "Rectify the image by correcting for lens distortion.",
+    "description": "校正鏡頭畸變以矯正影像。",
     "inputs": [
       "v"
     ],
@@ -26906,7 +26906,7 @@
     "meta": "TSC",
     "name": "limitdiff",
     "type": "N->V",
-    "description": "Apply filtering with limiting difference.",
+    "description": "套用限制差值濾鏡。",
     "inputs": [
       "n"
     ],
@@ -26953,7 +26953,7 @@
     "meta": "TSC",
     "name": "limiter",
     "type": "V->V",
-    "description": "Limit pixels components to the specified range.",
+    "description": "將像素分量限制在指定範圍內。",
     "inputs": [
       "v"
     ],
@@ -26992,7 +26992,7 @@
     "meta": "...",
     "name": "loop",
     "type": "V->V",
-    "description": "Loop video frames.",
+    "description": "循環播放視訊畫面。",
     "inputs": [
       "v"
     ],
@@ -27031,7 +27031,7 @@
     "meta": "TSC",
     "name": "lumakey",
     "type": "V->V",
-    "description": "Turns a certain luma into transparency.",
+    "description": "將特定亮度轉為透明。",
     "inputs": [
       "v"
     ],
@@ -27070,7 +27070,7 @@
     "meta": "TSC",
     "name": "lut",
     "type": "V->V",
-    "description": "Compute and apply a lookup table to the RGB/YUV input video.",
+    "description": "計算並對 RGB/YUV 輸入視訊套用查找表。",
     "inputs": [
       "v"
     ],
@@ -27173,7 +27173,7 @@
     "meta": "TSC",
     "name": "lut1d",
     "type": "V->V",
-    "description": "Adjust colors using a 1D LUT.",
+    "description": "使用 1D LUT 調整色彩。",
     "inputs": [
       "v"
     ],
@@ -27226,7 +27226,7 @@
     "meta": "TSC",
     "name": "lut2",
     "type": "VV->V",
-    "description": "Compute and apply a lookup table from two video inputs.",
+    "description": "從兩個視訊輸入計算並套用查找表。",
     "inputs": [
       "v",
       "v"
@@ -27282,7 +27282,7 @@
     "meta": "TSC",
     "name": "lut3d",
     "type": "V->V",
-    "description": "Adjust colors using a 3D LUT.",
+    "description": "使用 3D LUT 調整色彩。",
     "inputs": [
       "v"
     ],
@@ -27353,7 +27353,7 @@
     "meta": "TSC",
     "name": "lutrgb",
     "type": "V->V",
-    "description": "Compute and apply a lookup table to the RGB input video.",
+    "description": "計算並對 RGB 輸入視訊套用查找表。",
     "inputs": [
       "v"
     ],
@@ -27456,7 +27456,7 @@
     "meta": "TSC",
     "name": "lutyuv",
     "type": "V->V",
-    "description": "Compute and apply a lookup table to the YUV input video.",
+    "description": "計算並對 YUV 輸入視訊套用查找表。",
     "inputs": [
       "v"
     ],
@@ -27559,7 +27559,7 @@
     "meta": "TSC",
     "name": "maskedclamp",
     "type": "VVV->V",
-    "description": "Clamp first stream with second stream and third stream.",
+    "description": "以第二和第三串流夾住第一串流。",
     "inputs": [
       "v",
       "v",
@@ -27600,7 +27600,7 @@
     "meta": "TSC",
     "name": "maskedmax",
     "type": "VVV->V",
-    "description": "Apply filtering with maximum difference of two streams.",
+    "description": "套用兩個串流最大差值濾鏡。",
     "inputs": [
       "v",
       "v",
@@ -27625,7 +27625,7 @@
     "meta": "TSC",
     "name": "maskedmerge",
     "type": "VVV->V",
-    "description": "Merge first stream with second stream using third stream as mask.",
+    "description": "以第三串流為遮罩合併第一和第二串流。",
     "inputs": [
       "v",
       "v",
@@ -27650,7 +27650,7 @@
     "meta": "TSC",
     "name": "maskedmin",
     "type": "VVV->V",
-    "description": "Apply filtering with minimum difference of two streams.",
+    "description": "套用兩個串流最小差值濾鏡。",
     "inputs": [
       "v",
       "v",
@@ -27675,7 +27675,7 @@
     "meta": "TSC",
     "name": "maskedthreshold",
     "type": "VV->V",
-    "description": "Pick pixels comparing absolute difference of two streams with threshold.",
+    "description": "以閾值比較兩個串流的絕對差值來選取像素。",
     "inputs": [
       "v",
       "v"
@@ -27725,7 +27725,7 @@
     "meta": "TSC",
     "name": "maskfun",
     "type": "V->V",
-    "description": "Create Mask.",
+    "description": "建立遮罩。",
     "inputs": [
       "v"
     ],
@@ -27780,7 +27780,7 @@
     "meta": "TSC",
     "name": "median",
     "type": "V->V",
-    "description": "Apply Median filter.",
+    "description": "套用中值濾鏡。",
     "inputs": [
       "v"
     ],
@@ -27827,7 +27827,7 @@
     "meta": "...",
     "name": "mergeplanes",
     "type": "N->V",
-    "description": "Merge planes.",
+    "description": "合併平面。",
     "inputs": [
       "n"
     ],
@@ -27922,7 +27922,7 @@
     "meta": "...",
     "name": "mestimate",
     "type": "V->V",
-    "description": "Generate motion vectors.",
+    "description": "產生動態向量。",
     "inputs": [
       "v"
     ],
@@ -27999,7 +27999,7 @@
     "meta": "T..",
     "name": "metadata",
     "type": "V->V",
-    "description": "Manipulate video frame metadata.",
+    "description": "操作視訊畫面元資料。",
     "inputs": [
       "v"
     ],
@@ -28122,7 +28122,7 @@
     "meta": "T..",
     "name": "midequalizer",
     "type": "VV->V",
-    "description": "Apply Midway Equalization.",
+    "description": "套用中途均衡化。",
     "inputs": [
       "v",
       "v"
@@ -28146,7 +28146,7 @@
     "meta": "...",
     "name": "minterpolate",
     "type": "V->V",
-    "description": "Frame rate conversion using Motion Interpolation.",
+    "description": "使用動態插值進行幀率轉換。",
     "inputs": [
       "v"
     ],
@@ -28323,7 +28323,7 @@
     "meta": "TSC",
     "name": "mix",
     "type": "N->V",
-    "description": "Mix video inputs.",
+    "description": "混合視訊輸入。",
     "inputs": [
       "v",
       "v"
@@ -28393,7 +28393,7 @@
     "meta": "TSC",
     "name": "monochrome",
     "type": "V->V",
-    "description": "Convert video to gray using custom color filter.",
+    "description": "使用自訂色彩濾鏡將視訊轉為灰階。",
     "inputs": [
       "v"
     ],
@@ -28440,7 +28440,7 @@
     "meta": "T.C",
     "name": "morpho",
     "type": "VV->V",
-    "description": "Apply Morphological filter.",
+    "description": "套用形態學濾鏡。",
     "inputs": [
       "v",
       "v"
@@ -28520,7 +28520,7 @@
     "meta": "...",
     "name": "mpdecimate",
     "type": "V->V",
-    "description": "Remove near-duplicate frames.",
+    "description": "移除近似重複的畫面。",
     "inputs": [
       "v"
     ],
@@ -28567,7 +28567,7 @@
     "meta": "TS.",
     "name": "msad",
     "type": "VV->V",
-    "description": "Calculate the MSAD between two video streams.",
+    "description": "計算兩個視訊串流之間的 MSAD。",
     "inputs": [
       "v",
       "v"
@@ -28582,7 +28582,7 @@
     "meta": "TSC",
     "name": "multiply",
     "type": "VV->V",
-    "description": "Multiply first video stream with second video stream.",
+    "description": "將第一個視訊串流與第二個視訊串流相乘。",
     "inputs": [
       "v",
       "v"
@@ -28622,7 +28622,7 @@
     "meta": "TSC",
     "name": "negate",
     "type": "V->V",
-    "description": "Negate input video.",
+    "description": "對輸入視訊取反色。",
     "inputs": [
       "v"
     ],
@@ -28683,7 +28683,7 @@
     "meta": "TS.",
     "name": "nlmeans",
     "type": "V->V",
-    "description": "Non-local means denoiser.",
+    "description": "非局部均值降噪器。",
     "inputs": [
       "v"
     ],
@@ -28738,7 +28738,7 @@
     "meta": "TSC",
     "name": "nnedi",
     "type": "V->V",
-    "description": "Apply neural network edge directed interpolation intra-only deinterlacer.",
+    "description": "套用神經網路邊緣導向插值純幀內去交錯。",
     "inputs": [
       "v"
     ],
@@ -28963,7 +28963,7 @@
     "meta": "...",
     "name": "noformat",
     "type": "V->V",
-    "description": "Force libavfilter not to use any of the specified pixel formats for the input to the next filter.",
+    "description": "強制 libavfilter 不對下一個濾鏡的輸入使用任何指定的像素格式。",
     "inputs": [
       "v"
     ],
@@ -28986,7 +28986,7 @@
     "meta": "TS.",
     "name": "noise",
     "type": "V->V",
-    "description": "Add noise.",
+    "description": "添加雜訊。",
     "inputs": [
       "v"
     ],
@@ -29381,7 +29381,7 @@
     "meta": "T.C",
     "name": "normalize",
     "type": "V->V",
-    "description": "Normalize RGB video.",
+    "description": "對 RGB 視訊進行標準化。",
     "inputs": [
       "v"
     ],
@@ -29436,7 +29436,7 @@
     "meta": "...",
     "name": "null",
     "type": "V->V",
-    "description": "Pass the source unchanged to the output.",
+    "description": "將來源原樣傳遞到輸出。",
     "inputs": [
       "v"
     ],
@@ -29449,7 +29449,7 @@
     "meta": "T.C",
     "name": "oscilloscope",
     "type": "V->V",
-    "description": "2D Video Oscilloscope.",
+    "description": "2D 視訊示波器。",
     "inputs": [
       "v"
     ],
@@ -29568,7 +29568,7 @@
     "meta": "TSC",
     "name": "overlay",
     "type": "VV->V",
-    "description": "Overlay a video source on top of the input.",
+    "description": "在輸入上方疊加視訊來源。",
     "inputs": [
       "v",
       "v"
@@ -29716,7 +29716,7 @@
     "meta": "T..",
     "name": "owdenoise",
     "type": "V->V",
-    "description": "Denoise using wavelets.",
+    "description": "使用小波進行降噪。",
     "inputs": [
       "v"
     ],
@@ -29771,7 +29771,7 @@
     "meta": "...",
     "name": "pad",
     "type": "V->V",
-    "description": "Pad the input video.",
+    "description": "對輸入視訊添加邊距。",
     "inputs": [
       "v"
     ],
@@ -29868,7 +29868,7 @@
     "meta": "...",
     "name": "palettegen",
     "type": "V->V",
-    "description": "Find the optimal palette for a given stream.",
+    "description": "為給定串流尋找最佳調色盤。",
     "inputs": [
       "v"
     ],
@@ -29929,7 +29929,7 @@
     "meta": "...",
     "name": "paletteuse",
     "type": "VV->V",
-    "description": "Use a palette to downsample an input video stream.",
+    "description": "使用調色盤對輸入視訊串流進行降採樣。",
     "inputs": [
       "v",
       "v"
@@ -30033,7 +30033,7 @@
     "meta": "T.C",
     "name": "perms",
     "type": "V->V",
-    "description": "Set permissions for the output video frame.",
+    "description": "設定輸出視訊畫面的權限。",
     "inputs": [
       "v"
     ],
@@ -30086,7 +30086,7 @@
     "meta": "TS.",
     "name": "perspective",
     "type": "V->V",
-    "description": "Correct the perspective of video.",
+    "description": "校正視訊的透視。",
     "inputs": [
       "v"
     ],
@@ -30219,7 +30219,7 @@
     "meta": "T.C",
     "name": "phase",
     "type": "V->V",
-    "description": "Phase shift fields.",
+    "description": "相移場。",
     "inputs": [
       "v"
     ],
@@ -30280,7 +30280,7 @@
     "meta": "...",
     "name": "photosensitivity",
     "type": "V->V",
-    "description": "Filter out photosensitive epilepsy seizure-inducing flashes.",
+    "description": "過濾可能引發光敏性癲癇發作的閃光。",
     "inputs": [
       "v"
     ],
@@ -30343,7 +30343,7 @@
     "meta": "...",
     "name": "pixdesctest",
     "type": "V->V",
-    "description": "Test pixel format definitions.",
+    "description": "測試像素格式定義。",
     "inputs": [
       "v"
     ],
@@ -30356,7 +30356,7 @@
     "meta": "TSC",
     "name": "pixelize",
     "type": "V->V",
-    "description": "Pixelize video.",
+    "description": "對視訊進行像素化。",
     "inputs": [
       "v"
     ],
@@ -30463,7 +30463,7 @@
     "meta": "T.C",
     "name": "pixscope",
     "type": "V->V",
-    "description": "Pixel data analysis.",
+    "description": "像素資料分析。",
     "inputs": [
       "v"
     ],
@@ -30534,7 +30534,7 @@
     "meta": "T.C",
     "name": "pp",
     "type": "V->V",
-    "description": "Filter video using libpostproc.",
+    "description": "使用 libpostproc 對視訊進行濾鏡處理。",
     "inputs": [
       "v"
     ],
@@ -30557,7 +30557,7 @@
     "meta": "T..",
     "name": "pp7",
     "type": "V->V",
-    "description": "Apply Postprocessing 7 filter.",
+    "description": "套用後製 7 號濾鏡。",
     "inputs": [
       "v"
     ],
@@ -30602,7 +30602,7 @@
     "meta": "TS.",
     "name": "premultiply",
     "type": "N->V",
-    "description": "PreMultiply first stream with first plane of second stream.",
+    "description": "以第二串流的第一平面預乘第一串流。",
     "inputs": [
       "n"
     ],
@@ -30633,7 +30633,7 @@
     "meta": "TSC",
     "name": "prewitt",
     "type": "V->V",
-    "description": "Apply prewitt operator.",
+    "description": "套用 Prewitt 運算子。",
     "inputs": [
       "v"
     ],
@@ -30672,7 +30672,7 @@
     "meta": "TSC",
     "name": "pseudocolor",
     "type": "V->V",
-    "description": "Make pseudocolored video frames.",
+    "description": "製作偽彩色視訊畫面。",
     "inputs": [
       "v"
     ],
@@ -30891,7 +30891,7 @@
     "meta": "TS.",
     "name": "psnr",
     "type": "VV->V",
-    "description": "Calculate the PSNR between two video streams.",
+    "description": "計算兩個視訊串流之間的 PSNR。",
     "inputs": [
       "v",
       "v"
@@ -30939,7 +30939,7 @@
     "meta": "...",
     "name": "pullup",
     "type": "V->V",
-    "description": "Pullup from field sequence to frames.",
+    "description": "從場序列提取至畫面。",
     "inputs": [
       "v"
     ],
@@ -31016,7 +31016,7 @@
     "meta": "T..",
     "name": "qp",
     "type": "V->V",
-    "description": "Change video quantization parameters.",
+    "description": "更改視訊量化參數。",
     "inputs": [
       "v"
     ],
@@ -31039,7 +31039,7 @@
     "meta": "...",
     "name": "random",
     "type": "V->V",
-    "description": "Return random frames.",
+    "description": "回傳隨機畫面。",
     "inputs": [
       "v"
     ],
@@ -31070,7 +31070,7 @@
     "meta": "TSC",
     "name": "readeia608",
     "type": "V->V",
-    "description": "Read EIA-608 Closed Caption codes from input video and write them to frame metadata.",
+    "description": "從輸入視訊讀取 EIA-608 隱藏字幕碼並寫入畫面元資料。",
     "inputs": [
       "v"
     ],
@@ -31125,7 +31125,7 @@
     "meta": "...",
     "name": "readvitc",
     "type": "V->V",
-    "description": "Read vertical interval timecode and write it to frame metadata.",
+    "description": "讀取垂直間隔時間碼並寫入畫面元資料。",
     "inputs": [
       "v"
     ],
@@ -31164,7 +31164,7 @@
     "meta": "..C",
     "name": "realtime",
     "type": "V->V",
-    "description": "Slow down filtering to match realtime.",
+    "description": "減慢濾鏡處理以配合即時速度。",
     "inputs": [
       "v"
     ],
@@ -31195,7 +31195,7 @@
     "meta": ".S.",
     "name": "remap",
     "type": "VVV->V",
-    "description": "Remap pixels.",
+    "description": "重新映射像素。",
     "inputs": [
       "v",
       "v",
@@ -31238,7 +31238,7 @@
     "meta": "TS.",
     "name": "removegrain",
     "type": "V->V",
-    "description": "Remove grain.",
+    "description": "移除顆粒。",
     "inputs": [
       "v"
     ],
@@ -31285,7 +31285,7 @@
     "meta": "T..",
     "name": "removelogo",
     "type": "V->V",
-    "description": "Remove a TV logo based on a mask image.",
+    "description": "根據遮罩影像移除電視台標誌。",
     "inputs": [
       "v"
     ],
@@ -31316,7 +31316,7 @@
     "meta": "...",
     "name": "repeatfields",
     "type": "V->V",
-    "description": "Hard repeat fields based on MPEG repeat field flag.",
+    "description": "根據 MPEG 重複場標記強制重複場。",
     "inputs": [
       "v"
     ],
@@ -31329,7 +31329,7 @@
     "meta": "...",
     "name": "reverse",
     "type": "V->V",
-    "description": "Reverse a clip.",
+    "description": "反轉片段。",
     "inputs": [
       "v"
     ],
@@ -31342,7 +31342,7 @@
     "meta": "TSC",
     "name": "rgbashift",
     "type": "V->V",
-    "description": "Shift RGBA.",
+    "description": "偏移 RGBA。",
     "inputs": [
       "v"
     ],
@@ -31439,7 +31439,7 @@
     "meta": "TSC",
     "name": "roberts",
     "type": "V->V",
-    "description": "Apply roberts cross operator.",
+    "description": "套用 Roberts 交叉運算子。",
     "inputs": [
       "v"
     ],
@@ -31478,7 +31478,7 @@
     "meta": "TSC",
     "name": "rotate",
     "type": "V->V",
-    "description": "Rotate the input image.",
+    "description": "旋轉輸入影像。",
     "inputs": [
       "v"
     ],
@@ -31565,7 +31565,7 @@
     "meta": "T..",
     "name": "sab",
     "type": "V->V",
-    "description": "Apply shape adaptive blur.",
+    "description": "套用形狀自適應模糊。",
     "inputs": [
       "v"
     ],
@@ -31676,7 +31676,7 @@
     "meta": "..C",
     "name": "scale",
     "type": "V->V",
-    "description": "Scale the input video size and/or convert the image format.",
+    "description": "縮放輸入視訊尺寸和/或轉換影像格式。",
     "inputs": [
       "v"
     ],
@@ -32003,7 +32003,7 @@
     "meta": "..C",
     "name": "scale2ref",
     "type": "VV->VV",
-    "description": "Scale the input video size and/or convert the image format to the given reference.",
+    "description": "將輸入視訊縮放至指定參考的尺寸和/或格式。",
     "inputs": [
       "v",
       "v"
@@ -32332,7 +32332,7 @@
     "meta": "...",
     "name": "scdet",
     "type": "V->V",
-    "description": "Detect video scene change",
+    "description": "偵測視訊場景變換。",
     "inputs": [
       "v"
     ],
@@ -32379,7 +32379,7 @@
     "meta": "TSC",
     "name": "scharr",
     "type": "V->V",
-    "description": "Apply scharr operator.",
+    "description": "套用 Scharr 運算子。",
     "inputs": [
       "v"
     ],
@@ -32418,7 +32418,7 @@
     "meta": "TSC",
     "name": "scroll",
     "type": "V->V",
-    "description": "Scroll input video.",
+    "description": "滾動輸入視訊。",
     "inputs": [
       "v"
     ],
@@ -32481,7 +32481,7 @@
     "meta": "...",
     "name": "segment",
     "type": "V->N",
-    "description": "Segment video stream.",
+    "description": "分割視訊串流。",
     "inputs": [
       "v"
     ],
@@ -32512,7 +32512,7 @@
     "meta": "...",
     "name": "select",
     "type": "V->N",
-    "description": "Select video frames to pass in output.",
+    "description": "選取要輸出的視訊畫面。",
     "inputs": [
       "v"
     ],
@@ -32559,7 +32559,7 @@
     "meta": "TS.",
     "name": "selectivecolor",
     "type": "V->V",
-    "description": "Apply CMYK adjustments to specific color ranges.",
+    "description": "對特定色彩範圍套用 CMYK 調整。",
     "inputs": [
       "v"
     ],
@@ -32672,7 +32672,7 @@
     "meta": "...",
     "name": "sendcmd",
     "type": "V->V",
-    "description": "Send commands to filters.",
+    "description": "向濾鏡發送指令。",
     "inputs": [
       "v"
     ],
@@ -32719,7 +32719,7 @@
     "meta": "...",
     "name": "separatefields",
     "type": "V->V",
-    "description": "Split input video frames into fields.",
+    "description": "將輸入視訊畫面分割為場。",
     "inputs": [
       "v"
     ],
@@ -32732,7 +32732,7 @@
     "meta": "...",
     "name": "setdar",
     "type": "V->V",
-    "description": "Set the frame display aspect ratio.",
+    "description": "設定畫面顯示長寬比。",
     "inputs": [
       "v"
     ],
@@ -32779,7 +32779,7 @@
     "meta": "...",
     "name": "setfield",
     "type": "V->V",
-    "description": "Force field for the output video frame.",
+    "description": "強制設定輸出視訊畫面的場。",
     "inputs": [
       "v"
     ],
@@ -32820,7 +32820,7 @@
     "meta": "...",
     "name": "setparams",
     "type": "V->V",
-    "description": "Force field, or color property for the output video frame.",
+    "description": "強制設定輸出視訊畫面的場或色彩屬性。",
     "inputs": [
       "v"
     ],
@@ -33125,7 +33125,7 @@
     "meta": "...",
     "name": "setpts",
     "type": "V->V",
-    "description": "Set PTS for the output video frame.",
+    "description": "設定輸出視訊畫面的 PTS。",
     "inputs": [
       "v"
     ],
@@ -33148,7 +33148,7 @@
     "meta": "...",
     "name": "setrange",
     "type": "V->V",
-    "description": "Force color range for the output video frame.",
+    "description": "強制設定輸出視訊畫面的色彩範圍。",
     "inputs": [
       "v"
     ],
@@ -33209,7 +33209,7 @@
     "meta": "...",
     "name": "setsar",
     "type": "V->V",
-    "description": "Set the pixel sample aspect ratio.",
+    "description": "設定像素取樣長寬比。",
     "inputs": [
       "v"
     ],
@@ -33256,7 +33256,7 @@
     "meta": "...",
     "name": "settb",
     "type": "V->V",
-    "description": "Set timebase for the video output link.",
+    "description": "設定視訊輸出連結的時間基準。",
     "inputs": [
       "v"
     ],
@@ -33287,7 +33287,7 @@
     "meta": "TSC",
     "name": "shear",
     "type": "V->V",
-    "description": "Shear transform the input image.",
+    "description": "對輸入影像套用剪切變換。",
     "inputs": [
       "v"
     ],
@@ -33352,7 +33352,7 @@
     "meta": "...",
     "name": "showinfo",
     "type": "V->V",
-    "description": "Show textual information for each video frame.",
+    "description": "顯示每個視訊畫面的文字資訊。",
     "inputs": [
       "v"
     ],
@@ -33375,7 +33375,7 @@
     "meta": "...",
     "name": "showpalette",
     "type": "V->V",
-    "description": "Display frame palette.",
+    "description": "顯示畫面調色盤。",
     "inputs": [
       "v"
     ],
@@ -33398,7 +33398,7 @@
     "meta": "T..",
     "name": "shuffleframes",
     "type": "V->V",
-    "description": "Shuffle video frames.",
+    "description": "隨機排列視訊畫面。",
     "inputs": [
       "v"
     ],
@@ -33421,7 +33421,7 @@
     "meta": "TS.",
     "name": "shufflepixels",
     "type": "V->V",
-    "description": "Shuffle video pixels.",
+    "description": "隨機排列視訊像素。",
     "inputs": [
       "v"
     ],
@@ -33564,7 +33564,7 @@
     "meta": "T..",
     "name": "shuffleplanes",
     "type": "V->V",
-    "description": "Shuffle video planes.",
+    "description": "隨機排列視訊平面。",
     "inputs": [
       "v"
     ],
@@ -33611,7 +33611,7 @@
     "meta": "T..",
     "name": "sidedata",
     "type": "V->V",
-    "description": "Manipulate video frame side data.",
+    "description": "操作視訊畫面附加資料。",
     "inputs": [
       "v"
     ],
@@ -33738,7 +33738,7 @@
     "meta": ".S.",
     "name": "signalstats",
     "type": "V->V",
-    "description": "Generate statistics from video analysis.",
+    "description": "從視訊分析產生統計資訊。",
     "inputs": [
       "v"
     ],
@@ -33813,7 +33813,7 @@
     "meta": "...",
     "name": "signature",
     "type": "N->V",
-    "description": "Calculate the MPEG-7 video signature",
+    "description": "計算 MPEG-7 視訊簽章。",
     "inputs": [
       "n"
     ],
@@ -33924,7 +33924,7 @@
     "meta": "...",
     "name": "siti",
     "type": "V->V",
-    "description": "Calculate spatial information (SI) and temporal information (TI).",
+    "description": "計算空間資訊 (SI) 和時間資訊 (TI)。",
     "inputs": [
       "v"
     ],
@@ -33947,7 +33947,7 @@
     "meta": "T..",
     "name": "smartblur",
     "type": "V->V",
-    "description": "Blur the input video without impacting the outlines.",
+    "description": "在不影響輪廓的情況下對輸入視訊進行模糊處理。",
     "inputs": [
       "v"
     ],
@@ -34058,7 +34058,7 @@
     "meta": "TSC",
     "name": "sobel",
     "type": "V->V",
-    "description": "Apply sobel operator.",
+    "description": "套用 Sobel 運算子。",
     "inputs": [
       "v"
     ],
@@ -34097,7 +34097,7 @@
     "meta": "...",
     "name": "split",
     "type": "V->N",
-    "description": "Pass on the input to N video outputs.",
+    "description": "將輸入傳遞到 N 個視訊輸出。",
     "inputs": [
       "v"
     ],
@@ -34121,7 +34121,7 @@
     "meta": "T.C",
     "name": "spp",
     "type": "V->V",
-    "description": "Apply a simple post processing filter.",
+    "description": "套用簡單後製濾鏡。",
     "inputs": [
       "v"
     ],
@@ -34178,7 +34178,7 @@
     "meta": "...",
     "name": "sr",
     "type": "V->V",
-    "description": "Apply DNN-based image super resolution to the input.",
+    "description": "對輸入套用基於 DNN 的影像超解析度。",
     "inputs": [
       "v"
     ],
@@ -34239,7 +34239,7 @@
     "meta": "TS.",
     "name": "ssim",
     "type": "VV->V",
-    "description": "Calculate the SSIM between two video streams.",
+    "description": "計算兩個視訊串流之間的 SSIM。",
     "inputs": [
       "v",
       "v"
@@ -34271,7 +34271,7 @@
     "meta": ".S.",
     "name": "stereo3d",
     "type": "V->V",
-    "description": "Convert video stereoscopic 3D view.",
+    "description": "轉換視訊立體 3D 視角。",
     "inputs": [
       "v"
     ],
@@ -34526,7 +34526,7 @@
     "meta": "..C",
     "name": "streamselect",
     "type": "N->N",
-    "description": "Select video streams",
+    "description": "選取視訊串流。",
     "inputs": [
       "n",
       "n"
@@ -34558,7 +34558,7 @@
     "meta": "...",
     "name": "subtitles",
     "type": "V->V",
-    "description": "Render text subtitles onto input video using the libass library.",
+    "description": "使用 libass 函式庫將文字字幕渲染到輸入視訊上。",
     "inputs": [
       "v"
     ],
@@ -34645,7 +34645,7 @@
     "meta": ".S.",
     "name": "super2xsai",
     "type": "V->V",
-    "description": "Scale the input by 2x using the Super2xSaI pixel art algorithm.",
+    "description": "使用 Super2xSaI 像素藝術演算法將輸入縮放 2 倍。",
     "inputs": [
       "v"
     ],
@@ -34658,7 +34658,7 @@
     "meta": "T.C",
     "name": "swaprect",
     "type": "V->V",
-    "description": "Swap 2 rectangular objects in video.",
+    "description": "交換視訊中的兩個矩形區域。",
     "inputs": [
       "v"
     ],
@@ -34721,7 +34721,7 @@
     "meta": "T..",
     "name": "swapuv",
     "type": "V->V",
-    "description": "Swap U and V components.",
+    "description": "交換 U 和 V 分量。",
     "inputs": [
       "v"
     ],
@@ -34735,7 +34735,7 @@
     "meta": "TSC",
     "name": "tblend",
     "type": "V->V",
-    "description": "Blend successive frames.",
+    "description": "混合連續畫面。",
     "inputs": [
       "v"
     ],
@@ -35720,7 +35720,7 @@
     "meta": "...",
     "name": "telecine",
     "type": "V->V",
-    "description": "Apply a telecine pattern.",
+    "description": "套用 Telecine 模式。",
     "inputs": [
       "v"
     ],
@@ -35769,7 +35769,7 @@
     "meta": "...",
     "name": "thistogram",
     "type": "V->V",
-    "description": "Compute and draw a temporal histogram.",
+    "description": "計算並繪製時間直方圖。",
     "inputs": [
       "v"
     ],
@@ -35974,7 +35974,7 @@
     "meta": "TSC",
     "name": "threshold",
     "type": "VVVV->V",
-    "description": "Threshold first video stream using other video streams.",
+    "description": "使用其他視訊串流對第一個視訊串流進行閾值處理。",
     "inputs": [
       "v",
       "v",
@@ -36000,7 +36000,7 @@
     "meta": "T..",
     "name": "thumbnail",
     "type": "V->V",
-    "description": "Select the most representative frame in a given sequence of consecutive frames.",
+    "description": "從連續畫面序列中選取最具代表性的畫面。",
     "inputs": [
       "v"
     ],
@@ -36045,7 +36045,7 @@
     "meta": "...",
     "name": "tile",
     "type": "V->V",
-    "description": "Tile several successive frames together.",
+    "description": "將多個連續畫面拼貼在一起。",
     "inputs": [
       "v"
     ],
@@ -36116,7 +36116,7 @@
     "meta": "...",
     "name": "tinterlace",
     "type": "V->V",
-    "description": "Perform temporal field interlacing.",
+    "description": "執行時間場交錯。",
     "inputs": [
       "v"
     ],
@@ -36173,7 +36173,7 @@
     "meta": "TSC",
     "name": "tlut2",
     "type": "V->V",
-    "description": "Compute and apply a lookup table from two successive frames.",
+    "description": "從兩個連續畫面計算並套用查找表。",
     "inputs": [
       "v"
     ],
@@ -36220,7 +36220,7 @@
     "meta": "TSC",
     "name": "tmedian",
     "type": "V->V",
-    "description": "Pick median pixels from successive frames.",
+    "description": "從連續畫面中選取中值像素。",
     "inputs": [
       "v"
     ],
@@ -36259,7 +36259,7 @@
     "meta": "T..",
     "name": "tmidequalizer",
     "type": "V->V",
-    "description": "Apply Temporal Midway Equalization.",
+    "description": "套用時間中途均衡化。",
     "inputs": [
       "v"
     ],
@@ -36298,7 +36298,7 @@
     "meta": "TSC",
     "name": "tmix",
     "type": "V->V",
-    "description": "Mix successive video frames.",
+    "description": "混合連續視訊畫面。",
     "inputs": [
       "v"
     ],
@@ -36345,7 +36345,7 @@
     "meta": ".S.",
     "name": "tonemap",
     "type": "V->V",
-    "description": "Conversion to/from different dynamic ranges.",
+    "description": "在不同動態範圍之間進行轉換。",
     "inputs": [
       "v"
     ],
@@ -36422,7 +36422,7 @@
     "meta": "...",
     "name": "tpad",
     "type": "V->V",
-    "description": "Temporarily pad video frames.",
+    "description": "暫時填充視訊畫面。",
     "inputs": [
       "v"
     ],
@@ -36513,7 +36513,7 @@
     "meta": ".S.",
     "name": "transpose",
     "type": "V->V",
-    "description": "Transpose input video.",
+    "description": "轉置輸入視訊。",
     "inputs": [
       "v"
     ],
@@ -36576,7 +36576,7 @@
     "meta": "...",
     "name": "trim",
     "type": "V->V",
-    "description": "Pick one continuous section from the input, drop the rest.",
+    "description": "從輸入中選取一個連續段落，丟棄其餘部分。",
     "inputs": [
       "v"
     ],
@@ -36671,7 +36671,7 @@
     "meta": "TS.",
     "name": "unpremultiply",
     "type": "N->V",
-    "description": "UnPreMultiply first stream with first plane of second stream.",
+    "description": "以第二串流的第一平面反預乘第一串流。",
     "inputs": [
       "n"
     ],
@@ -36702,7 +36702,7 @@
     "meta": "TS.",
     "name": "unsharp",
     "type": "V->V",
-    "description": "Sharpen or blur the input video.",
+    "description": "對輸入視訊進行銳化或模糊處理。",
     "inputs": [
       "v"
     ],
@@ -36861,7 +36861,7 @@
     "meta": "...",
     "name": "untile",
     "type": "V->V",
-    "description": "Untile a frame into a sequence of frames.",
+    "description": "將拼貼畫面分解為一系列畫面。",
     "inputs": [
       "v"
     ],
@@ -36884,7 +36884,7 @@
     "meta": ".SC",
     "name": "v360",
     "type": "V->V",
-    "description": "Convert 360 projection of video.",
+    "description": "轉換視訊的 360 度投影。",
     "inputs": [
       "v"
     ],
@@ -37513,7 +37513,7 @@
     "meta": "T..",
     "name": "vaguedenoiser",
     "type": "V->V",
-    "description": "Apply a Wavelet based Denoiser.",
+    "description": "套用基於小波的降噪器。",
     "inputs": [
       "v"
     ],
@@ -37600,7 +37600,7 @@
     "meta": "TSC",
     "name": "varblur",
     "type": "VV->V",
-    "description": "Apply Variable Blur filter.",
+    "description": "套用可變模糊濾鏡。",
     "inputs": [
       "v",
       "v"
@@ -37640,7 +37640,7 @@
     "meta": "..C",
     "name": "vectorscope",
     "type": "V->V",
-    "description": "Video vectorscope.",
+    "description": "視訊向量示波器。",
     "inputs": [
       "v"
     ],
@@ -38051,7 +38051,7 @@
     "meta": "T..",
     "name": "vflip",
     "type": "V->V",
-    "description": "Flip the input video vertically.",
+    "description": "垂直翻轉輸入視訊。",
     "inputs": [
       "v"
     ],
@@ -38065,7 +38065,7 @@
     "meta": "...",
     "name": "vfrdet",
     "type": "V->V",
-    "description": "Variable frame rate detect filter.",
+    "description": "可變幀率偵測濾鏡。",
     "inputs": [
       "v"
     ],
@@ -38078,7 +38078,7 @@
     "meta": "TSC",
     "name": "vibrance",
     "type": "V->V",
-    "description": "Boost or alter saturation.",
+    "description": "提升或調整飽和度。",
     "inputs": [
       "v"
     ],
@@ -38157,7 +38157,7 @@
     "meta": "TS.",
     "name": "vif",
     "type": "VV->V",
-    "description": "Calculate the VIF between two video streams.",
+    "description": "計算兩個視訊串流之間的 VIF。",
     "inputs": [
       "v",
       "v"
@@ -38172,7 +38172,7 @@
     "meta": "T..",
     "name": "vignette",
     "type": "V->V",
-    "description": "Make or reverse a vignette effect.",
+    "description": "製作或反轉暗角效果。",
     "inputs": [
       "v"
     ],
@@ -38271,7 +38271,7 @@
     "meta": "...",
     "name": "vmafmotion",
     "type": "V->V",
-    "description": "Calculate the VMAF Motion score.",
+    "description": "計算 VMAF 動態分數。",
     "inputs": [
       "v"
     ],
@@ -38294,7 +38294,7 @@
     "meta": ".S.",
     "name": "vstack",
     "type": "N->V",
-    "description": "Stack video inputs vertically.",
+    "description": "將視訊輸入垂直堆疊。",
     "inputs": [
       "v",
       "v"
@@ -38326,7 +38326,7 @@
     "meta": "TSC",
     "name": "w3fdif",
     "type": "V->V",
-    "description": "Apply Martin Weston three field deinterlace.",
+    "description": "套用 Martin Weston 三場去交錯。",
     "inputs": [
       "v"
     ],
@@ -38417,7 +38417,7 @@
     "meta": ".SC",
     "name": "waveform",
     "type": "V->V",
-    "description": "Video waveform monitor.",
+    "description": "視訊波形監視器。",
     "inputs": [
       "v"
     ],
@@ -38928,7 +38928,7 @@
     "meta": ".S.",
     "name": "weave",
     "type": "V->V",
-    "description": "Weave input video fields into frames.",
+    "description": "將輸入視訊場編織為畫面。",
     "inputs": [
       "v"
     ],
@@ -38969,7 +38969,7 @@
     "meta": ".S.",
     "name": "xbr",
     "type": "V->V",
-    "description": "Scale the input using xBR algorithm.",
+    "description": "使用 xBR 演算法對輸入進行縮放。",
     "inputs": [
       "v"
     ],
@@ -38992,7 +38992,7 @@
     "meta": "TS.",
     "name": "xcorrelate",
     "type": "VV->V",
-    "description": "Cross-correlate first video stream with second video stream.",
+    "description": "將第一個視訊串流與第二個視訊串流進行互相關。",
     "inputs": [
       "v",
       "v"
@@ -39034,7 +39034,7 @@
     "meta": ".S.",
     "name": "xfade",
     "type": "VV->V",
-    "description": "Cross fade one video with another video.",
+    "description": "對兩個視訊進行交叉淡化。",
     "inputs": [
       "v",
       "v"
@@ -39272,7 +39272,7 @@
     "meta": "TSC",
     "name": "xmedian",
     "type": "N->V",
-    "description": "Pick median pixels from several video inputs.",
+    "description": "從多個視訊輸入中選取中值像素。",
     "inputs": [
       "v",
       "v",
@@ -39313,7 +39313,7 @@
     "meta": ".S.",
     "name": "xstack",
     "type": "N->V",
-    "description": "Stack video inputs into custom layout.",
+    "description": "將視訊輸入堆疊為自訂佈局。",
     "inputs": [
       "v",
       "v"
@@ -39369,7 +39369,7 @@
     "meta": "TS.",
     "name": "yadif",
     "type": "V->V",
-    "description": "Deinterlace the input image.",
+    "description": "對輸入影像進行去交錯。",
     "inputs": [
       "v"
     ],
@@ -39450,7 +39450,7 @@
     "meta": "TSC",
     "name": "yaepblur",
     "type": "V->V",
-    "description": "Yet another edge preserving blur filter.",
+    "description": "另一種邊緣保留模糊濾鏡。",
     "inputs": [
       "v"
     ],
@@ -39513,7 +39513,7 @@
     "meta": "...",
     "name": "zoompan",
     "type": "V->V",
-    "description": "Apply Zoom & Pan effect.",
+    "description": "套用縮放和平移效果。",
     "inputs": [
       "v"
     ],
@@ -39584,7 +39584,7 @@
     "meta": "...",
     "name": "allrgb",
     "type": "|->V",
-    "description": "Generate all RGB colors.",
+    "description": "產生所有 RGB 顏色。",
     "inputs": [
       "|"
     ],
@@ -39639,7 +39639,7 @@
     "meta": "...",
     "name": "allyuv",
     "type": "|->V",
-    "description": "Generate all yuv colors.",
+    "description": "產生所有 YUV 顏色。",
     "inputs": [
       "|"
     ],
@@ -39694,7 +39694,7 @@
     "meta": "...",
     "name": "cellauto",
     "type": "|->V",
-    "description": "Create pattern generated by an elementary cellular automaton.",
+    "description": "由基本細胞自動機產生圖案。",
     "inputs": [
       "|"
     ],
@@ -39845,7 +39845,7 @@
     "meta": "..C",
     "name": "color",
     "type": "|->V",
-    "description": "Provide an uniformly colored input.",
+    "description": "提供均勻色彩輸入。",
     "inputs": [
       "|"
     ],
@@ -39932,7 +39932,7 @@
     "meta": "...",
     "name": "colorchart",
     "type": "|->V",
-    "description": "Generate color checker chart.",
+    "description": "產生色彩檢查圖表。",
     "inputs": [
       "|"
     ],
@@ -40013,7 +40013,7 @@
     "meta": "...",
     "name": "colorspectrum",
     "type": "|->V",
-    "description": "Generate colors spectrum.",
+    "description": "產生色彩光譜。",
     "inputs": [
       "|"
     ],
@@ -40106,7 +40106,7 @@
     "meta": ".S.",
     "name": "gradients",
     "type": "|->V",
-    "description": "Draw a gradients.",
+    "description": "繪製漸層。",
     "inputs": [
       "|"
     ],
@@ -40349,7 +40349,7 @@
     "meta": "...",
     "name": "haldclutsrc",
     "type": "|->V",
-    "description": "Provide an identity Hald CLUT.",
+    "description": "提供恆等 Hald CLUT。",
     "inputs": [
       "|"
     ],
@@ -40412,7 +40412,7 @@
     "meta": "...",
     "name": "life",
     "type": "|->V",
-    "description": "Create life.",
+    "description": "建立生命遊戲。",
     "inputs": [
       "|"
     ],
@@ -40555,7 +40555,7 @@
     "meta": "...",
     "name": "mandelbrot",
     "type": "|->V",
-    "description": "Render a Mandelbrot fractal.",
+    "description": "渲染 Mandelbrot 碎形。",
     "inputs": [
       "|"
     ],
@@ -40734,7 +40734,7 @@
     "meta": "...",
     "name": "mptestsrc",
     "type": "|->V",
-    "description": "Generate various test pattern.",
+    "description": "產生各種測試圖案。",
     "inputs": [
       "|"
     ],
@@ -40905,7 +40905,7 @@
     "meta": "...",
     "name": "nullsrc",
     "type": "|->V",
-    "description": "Null video source, return unprocessed video frames.",
+    "description": "空視訊來源，回傳未處理的視訊畫面。",
     "inputs": [
       "|"
     ],
@@ -40976,7 +40976,7 @@
     "meta": "...",
     "name": "pal75bars",
     "type": "|->V",
-    "description": "Generate PAL 75% color bars.",
+    "description": "產生 PAL 75% 彩條。",
     "inputs": [
       "|"
     ],
@@ -41047,7 +41047,7 @@
     "meta": "...",
     "name": "pal100bars",
     "type": "|->V",
-    "description": "Generate PAL 100% color bars.",
+    "description": "產生 PAL 100% 彩條。",
     "inputs": [
       "|"
     ],
@@ -41118,7 +41118,7 @@
     "meta": "...",
     "name": "rgbtestsrc",
     "type": "|->V",
-    "description": "Generate RGB test pattern.",
+    "description": "產生 RGB 測試圖案。",
     "inputs": [
       "|"
     ],
@@ -41205,7 +41205,7 @@
     "meta": ".S.",
     "name": "sierpinski",
     "type": "|->V",
-    "description": "Render a Sierpinski fractal.",
+    "description": "渲染 Sierpinski 碎形。",
     "inputs": [
       "|"
     ],
@@ -41286,7 +41286,7 @@
     "meta": "...",
     "name": "smptebars",
     "type": "|->V",
-    "description": "Generate SMPTE color bars.",
+    "description": "產生 SMPTE 彩條。",
     "inputs": [
       "|"
     ],
@@ -41357,7 +41357,7 @@
     "meta": "...",
     "name": "smptehdbars",
     "type": "|->V",
-    "description": "Generate SMPTE HD color bars.",
+    "description": "產生 SMPTE HD 彩條。",
     "inputs": [
       "|"
     ],
@@ -41428,7 +41428,7 @@
     "meta": "...",
     "name": "testsrc",
     "type": "|->V",
-    "description": "Generate test pattern.",
+    "description": "產生測試圖案。",
     "inputs": [
       "|"
     ],
@@ -41515,7 +41515,7 @@
     "meta": "...",
     "name": "testsrc2",
     "type": "|->V",
-    "description": "Generate another test pattern.",
+    "description": "產生另一種測試圖案。",
     "inputs": [
       "|"
     ],
@@ -41594,7 +41594,7 @@
     "meta": "...",
     "name": "yuvtestsrc",
     "type": "|->V",
-    "description": "Generate YUV test pattern.",
+    "description": "產生 YUV 測試圖案。",
     "inputs": [
       "|"
     ],
@@ -41665,7 +41665,7 @@
     "meta": "...",
     "name": "nullsink",
     "type": "V->|",
-    "description": "Do absolutely nothing with the input video.",
+    "description": "對輸入視訊不做任何處理。",
     "inputs": [
       "v"
     ],
@@ -41678,7 +41678,7 @@
     "meta": "...",
     "name": "abitscope",
     "type": "A->V",
-    "description": "Convert input audio to audio bit scope video output.",
+    "description": "將輸入音訊轉換為音訊位元示波器視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -41769,7 +41769,7 @@
     "meta": "...",
     "name": "adrawgraph",
     "type": "A->V",
-    "description": "Draw a graph using input audio metadata.",
+    "description": "使用輸入音訊元資料繪製圖表。",
     "inputs": [
       "a"
     ],
@@ -41956,7 +41956,7 @@
     "meta": "...",
     "name": "agraphmonitor",
     "type": "A->V",
-    "description": "Show various filtergraph stats.",
+    "description": "顯示各種濾鏡圖統計資訊。",
     "inputs": [
       "a"
     ],
@@ -42203,7 +42203,7 @@
     "meta": "...",
     "name": "ahistogram",
     "type": "A->V",
-    "description": "Convert input audio to histogram video output.",
+    "description": "將輸入音訊轉換為直方圖視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -42368,7 +42368,7 @@
     "meta": "...",
     "name": "aphasemeter",
     "type": "A->N",
-    "description": "Convert input audio to phase meter video output.",
+    "description": "將輸入音訊轉換為相位計視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -42511,7 +42511,7 @@
     "meta": ".SC",
     "name": "avectorscope",
     "type": "A->V",
-    "description": "Convert input audio to vectorscope video output.",
+    "description": "將輸入音訊轉換為向量示波器視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -42756,7 +42756,7 @@
     "meta": "..C",
     "name": "concat",
     "type": "N->N",
-    "description": "Concatenate audio and video streams.",
+    "description": "串接音訊和視訊串流。",
     "inputs": [
       "n"
     ],
@@ -42803,7 +42803,7 @@
     "meta": "...",
     "name": "showcqt",
     "type": "A->V",
-    "description": "Convert input audio to a CQT (Constant/Clamped Q Transform) spectrum video output.",
+    "description": "將輸入音訊轉換為 CQT（恆定/限制 Q 轉換）頻譜視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -43128,7 +43128,7 @@
     "meta": "...",
     "name": "showfreqs",
     "type": "A->V",
-    "description": "Convert input audio to a frequencies video output.",
+    "description": "將輸入音訊轉換為頻率視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -43431,7 +43431,7 @@
     "meta": ".S.",
     "name": "showspatial",
     "type": "A->V",
-    "description": "Convert input audio to a spatial video output.",
+    "description": "將輸入音訊轉換為空間視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -43584,7 +43584,7 @@
     "meta": ".S.",
     "name": "showspectrum",
     "type": "A->V",
-    "description": "Convert input audio to a spectrum video output.",
+    "description": "將輸入音訊轉換為頻譜視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -44011,7 +44011,7 @@
     "meta": ".S.",
     "name": "showspectrumpic",
     "type": "A->V",
-    "description": "Convert input audio to a spectrum video output single picture.",
+    "description": "將輸入音訊轉換為單張頻譜視訊圖片輸出。",
     "inputs": [
       "a"
     ],
@@ -44370,7 +44370,7 @@
     "meta": "...",
     "name": "showvolume",
     "type": "A->V",
-    "description": "Convert input audio volume to video output.",
+    "description": "將輸入音訊音量轉換為視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -44543,7 +44543,7 @@
     "meta": "...",
     "name": "showwaves",
     "type": "A->V",
-    "description": "Convert input audio to a video output.",
+    "description": "將輸入音訊轉換為視訊輸出。",
     "inputs": [
       "a"
     ],
@@ -44684,7 +44684,7 @@
     "meta": "...",
     "name": "showwavespic",
     "type": "A->V",
-    "description": "Convert input audio to a video output single picture.",
+    "description": "將輸入音訊轉換為單張視訊圖片輸出。",
     "inputs": [
       "a"
     ],
@@ -44793,7 +44793,7 @@
     "meta": "...",
     "name": "spectrumsynth",
     "type": "VV->A",
-    "description": "Convert input spectrum videos to audio output.",
+    "description": "將輸入頻譜視訊轉換為音訊輸出。",
     "inputs": [
       "v",
       "v"
@@ -44993,7 +44993,7 @@
     "meta": "...",
     "name": "avsynctest",
     "type": "|->AV",
-    "description": "Generate an Audio Video Sync Test.",
+    "description": "產生音視訊同步測試。",
     "inputs": [
       "|"
     ],
@@ -45161,7 +45161,7 @@
     "meta": "..C",
     "name": "amovie",
     "type": "|->N",
-    "description": "Read audio from a movie source.",
+    "description": "從影片來源讀取音訊。",
     "inputs": [
       "|"
     ],
@@ -45280,7 +45280,7 @@
     "meta": "..C",
     "name": "movie",
     "type": "|->N",
-    "description": "Read from a movie source.",
+    "description": "從影片來源讀取。",
     "inputs": [
       "|"
     ],
@@ -45399,7 +45399,7 @@
     "meta": "...",
     "name": "afifo",
     "type": "A->A",
-    "description": "Buffer input frames and send them when they are requested.",
+    "description": "緩衝輸入畫面並在請求時發送。",
     "inputs": [
       "a"
     ],
@@ -45412,7 +45412,7 @@
     "meta": "...",
     "name": "fifo",
     "type": "V->V",
-    "description": "Buffer input images and send them when they are requested.",
+    "description": "緩衝輸入影像並在請求時發送。",
     "inputs": [
       "v"
     ],
@@ -45425,7 +45425,7 @@
     "meta": "...",
     "name": "abuffer",
     "type": "|->A",
-    "description": "Buffer audio frames, and make them accessible to the filterchain.",
+    "description": "緩衝音訊畫面，並使其可被濾鏡鏈存取。",
     "inputs": [
       "|"
     ],
@@ -45480,7 +45480,7 @@
     "meta": "...",
     "name": "buffer",
     "type": "|->V",
-    "description": "Buffer video frames, and make them accessible to the filterchain.",
+    "description": "緩衝視訊畫面，並使其可被濾鏡鏈存取。",
     "inputs": [
       "|"
     ],
@@ -45559,7 +45559,7 @@
     "meta": "...",
     "name": "abuffersink",
     "type": "A->|",
-    "description": "Buffer audio frames, and make them available to the end of the filter graph.",
+    "description": "緩衝音訊畫面，並使其可在濾鏡圖末端取用。",
     "inputs": [
       "a"
     ],
@@ -45622,7 +45622,7 @@
     "meta": "...",
     "name": "buffersink",
     "type": "V->|",
-    "description": "Buffer video frames, and make them available to the end of the filter graph.",
+    "description": "緩衝視訊畫面，並使其可在濾鏡圖末端取用。",
     "inputs": [
       "v"
     ],
