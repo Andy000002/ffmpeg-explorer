@@ -34,7 +34,7 @@
     { name: "鏡像效果", url: BASE + "examples/mirror.json" },
   ];
 
-  let videoValue = "/" + $inputs[0].name;
+  let videoValue = BASE + $inputs[0].name;
   let ffmpegLoaded = false;
   let rendering = false;
   let log = "";
@@ -103,7 +103,7 @@
       ];
 
       for (let f of fontNames) {
-        await ffmpeg.writeFile(f, await fetchFile("/" + f));
+        await ffmpeg.writeFile(f, await fetchFile(BASE + f));
       }
 
       let clist = [...$previewCommand];
